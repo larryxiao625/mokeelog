@@ -1,0 +1,2071 @@
+--------- beginning of /dev/log/system
+I/auditd  ( 1912): Starting up
+I/audit_log( 1912): Previous audit logfile not detected
+--------- beginning of /dev/log/main
+I/installd( 1921): installd firing up
+I/DEBUG   ( 1914): debuggerd: Dec 20 2014 18:55:02
+I/mk      ( 1939):    __     __    ____  __  _  _____  _____ 
+I/mk      ( 1940):   //\    //\   ||   | ||  / ||     ||     
+E/DirectVolume( 1911): Vold managed volumes must have auto mount point; ignoring /storage/sdcard1
+E/DirectVolume( 1911): Vold managed volumes must have auto mount point; ignoring /storage/usbdisk0
+I/Vold    ( 1911): Vold 2.1 (the revenge) firing up
+D/Vold    ( 1911): Volume sdcard1 state changing -1 (Initializing) -> 0 (No-Media)
+D/Vold    ( 1911): Volume usbdisk0 state changing -1 (Initializing) -> 0 (No-Media)
+D/macloader( 1923): Deleting file /data/.cid.info
+I/mk      ( 1942):  //  \  //  \  ||   | || |  ||———— ||———— 
+I/Netd    ( 1913): Netd 1.0 starting
+D/Vold    ( 1911): Volume sdcard1 state changing 0 (No-Media) -> 2 (Pending)
+D/DirectVolume( 1911): DirectVolume::handlePartitionAdded -> MAJOR 179, MINOR 17, PARTN 1
+D/Vold    ( 1911): Volume sdcard1 state changing 2 (Pending) -> 1 (Idle-Unmounted)
+I/mk      ( 1952): //    \//    \ ||___| ||  \ ||____ ||____ 
+I/mk      ( 1987): Welcome to Android 4.4.4 / MoKee-MK44.4-i9308-201412262205-UNOFFICIAL 
+I/SurfaceFlinger( 1917): SurfaceFlinger is starting
+I/SurfaceFlinger( 1917): SurfaceFlinger's main thread ready to run. Initializing graphics H/W...
+D/libEGL  ( 1917): loaded /system/lib/egl/libEGL_mali.so
+D/libEGL  ( 1917): loaded /system/lib/egl/libGLESv1_CM_mali.so
+D/libEGL  ( 1917): loaded /system/lib/egl/libGLESv2_mali.so
+E/        ( 1917): ERROR in Mali driver:
+E/        ( 1917):  * Device driver API mismatch
+E/        ( 1917):  * Device driver API version: 29
+E/        ( 1917):  * User space API version: 23
+E/        ( 1917): mali: REVISION=Linux-r3p2-01rel3 BUILD_DATE=Fri Mar 21 13:52:50 KST 2014 
+W/libEGL  ( 1917): eglInitialize(0x1) failed (EGL_BAD_ALLOC)
+I/gralloc ( 1917): using (fd=16)
+I/gralloc ( 1917): id           = s3cfb
+I/gralloc ( 1917): xres         = 720 px
+I/gralloc ( 1917): yres         = 1280 px
+I/gralloc ( 1917): xres_virtual = 720 px
+I/gralloc ( 1917): yres_virtual = 2560 px
+I/gralloc ( 1917): bpp          = 32
+I/gralloc ( 1917): r            = 16:8
+I/gralloc ( 1917): g            =  8:8
+I/gralloc ( 1917): b            =  0:8
+I/gralloc ( 1917): width        = 60 mm (304.799988 dpi)
+I/gralloc ( 1917): height       = 106 mm (306.716980 dpi)
+I/gralloc ( 1917): refresh rate = 60.51 Hz
+I/SurfaceFlinger( 1917): Using composer version 1.0
+W/SurfaceFlinger( 1917): getting VSYNC period from fb HAL: 16527286
+W/SurfaceFlinger( 1917): no suitable EGLConfig found, trying a simpler query
+F/SurfaceFlinger( 1917): no suitable EGLConfig found, giving up
+W/SurfaceFlinger( 1917): Ignoring duplicate VSYNC event from HWC (t=0)
+F/libc    ( 1917): Fatal signal 6 (SIGABRT) at 0x0000077d (code=-6), thread 1917 (surfaceflinger)
+I/mediaserver( 1920): ServiceManager: 0x40cd01b0
+I/AudioFlinger( 1920): Using default 3000 mSec as standby time.
+E/MediaPlayerFactory( 1920): calling dlopen on FACTORY_LIB
+E/MediaPlayerFactory( 1920): Failed to open FACTORY_LIB Error : dlopen failed: library "libdashplayer.so" not found 
+I/CameraService( 1920): CameraService started (pid=1920)
+I/CameraService( 1920): Loaded "m0xx Camera Wrapper" camera module
+D/SecCameraHardware( 1920): LSIHAL int android::HAL_getNumberOfCameras()
+I/AudioPolicyManagerBase( 1920): loadAudioPolicyConfig() loaded /system/etc/audio_policy.conf
+V/audio_hw_primary( 1920): Reading configuration from /system/etc/sound/i9308
+E/audio_hw_primary( 1920): Failed to open /system/etc/sound/i9308
+E/AudioFlinger( 1920): int android::load_audio_interface(const char*, audio_hw_device_t**) couldn't open audio hw device in audio.primary (Invalid argument)
+I/AudioFlinger( 1920): loadHwModule() error -22 loading module primary 
+W/AudioPolicyManagerBase( 1920): could not open HW module primary
+I/audio_a2dp_hw( 1920): adev_open:  adev_open in A2dp_hw module
+I/AudioFlinger( 1920): loadHwModule() Loaded a2dp audio interface from A2DP Audio HW HAL (audio) handle 1
+I/AudioFlinger( 1920): loadHwModule() Loaded usb audio interface from USB audio HW HAL (audio) handle 2
+I/r_submix( 1920): adev_open(name=audio_hw_if)
+I/r_submix( 1920): adev_init_check()
+I/AudioFlinger( 1920): loadHwModule() Loaded r_submix audio interface from Wifi Display audio HAL (audio) handle 3
+E/AudioPolicyManagerBase( 1920): Not output found for attached devices 00000003
+E/AudioPolicyManagerBase( 1920): Failed to open primary output
+E/AudioPolicyManagerBase( 1920): getDeviceForStrategy() speaker device not found for STRATEGY_SONIFICATION
+E/AudioPolicyManagerBase( 1920): getDeviceForStrategy() speaker device not found for STRATEGY_SONIFICATION
+E/AudioPolicyService( 1920): couldn't init_check the audio policy (No such device)
+I/DEBUG   ( 1914): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+I/DEBUG   ( 1914): Build fingerprint: 'samsung/i9308xx/i9308:4.3/JSS15J/i9308XXUGMJ9:user/release-keys'
+I/DEBUG   ( 1914): Revision: '12'
+I/DEBUG   ( 1914): pid: 1917, tid: 1917, name: surfaceflinger  >>> /system/bin/surfaceflinger <<<
+I/DEBUG   ( 1914): signal 6 (SIGABRT), code -6 (SI_TKILL), fault addr --------
+I/DEBUG   ( 1914):     r0 00000000  r1 0000077d  r2 00000006  r3 00000000
+I/DEBUG   ( 1914):     r4 4017bf2c  r5 00000006  r6 00000002  r7 0000010c
+I/DEBUG   ( 1914):     r8 00000001  r9 41b87530  sl 00000001  fp beca6a6c
+I/DEBUG   ( 1914):     ip 0000077d  sp beca6518  lr 402260b7  pc 4023505c  cpsr 000f0010
+I/DEBUG   ( 1914):     d0  6174697520676e69  d1  434c474520656c62
+I/DEBUG   ( 1914):     d2  6f66206769666e6f  d3  766967202c646e75
+I/DEBUG   ( 1914):     d4  3fe000000000953a  d5  4024000000000000
+I/DEBUG   ( 1914):     d6  0000000000000000  d7  4398666640000000
+I/DEBUG   ( 1914):     d8  0000000000000000  d9  0000000000000000
+I/DEBUG   ( 1914):     d10 0000000000000000  d11 0000000000000000
+I/DEBUG   ( 1914):     d12 0000000000000000  d13 0000000000000000
+I/DEBUG   ( 1914):     d14 0000000000000000  d15 0000000000000000
+I/DEBUG   ( 1914):     d16 404e40c4a0000000  d17 41cdcd6500000000
+I/DEBUG   ( 1914):     d18 416f85f6cd117aa9  d19 0000000000000000
+I/DEBUG   ( 1914):     d20 401833d080000000  d21 404e40c4a0000000
+I/DEBUG   ( 1914):     d22 0000000000000000  d23 0000000000000000
+I/DEBUG   ( 1914):     d24 0000000000000000  d25 0000000000000000
+I/DEBUG   ( 1914):     d26 404e40c4a0000000  d27 0000000000000000
+I/DEBUG   ( 1914):     d28 0000000000000000  d29 0000000000000000
+I/DEBUG   ( 1914):     d30 0000000000000000  d31 4000000000000000
+I/DEBUG   ( 1914):     scr 20000010
+I/DEBUG   ( 1914): 
+I/DEBUG   ( 1914): backtrace:
+I/DEBUG   ( 1914):     #00  pc 0002205c  /system/lib/libc.so (tgkill+12)
+I/DEBUG   ( 1914):     #01  pc 000130b3  /system/lib/libc.so (pthread_kill+50)
+I/DEBUG   ( 1914):     #02  pc 000132ab  /system/lib/libc.so (raise+10)
+I/DEBUG   ( 1914):     #03  pc 0001200b  /system/lib/libc.so
+I/DEBUG   ( 1914):     #04  pc 00021910  /system/lib/libc.so (abort+4)
+I/DEBUG   ( 1914):     #05  pc 00006aaf  /system/lib/libcutils.so (__android_log_assert+86)
+I/DEBUG   ( 1914):     #06  pc 0001d11f  /system/lib/libsurfaceflinger.so (android::SurfaceFlinger::init()+1294)
+I/DEBUG   ( 1914):     #07  pc 000008a7  /system/bin/surfaceflinger
+I/DEBUG   ( 1914):     #08  pc 0000e42b  /system/lib/libc.so (__libc_init+50)
+I/DEBUG   ( 1914):     #09  pc 000007dc  /system/bin/surfaceflinger
+I/DEBUG   ( 1914): 
+I/DEBUG   ( 1914): stack:
+I/DEBUG   ( 1914):          beca64d8  00000000  
+I/DEBUG   ( 1914):          beca64dc  00000000  
+I/DEBUG   ( 1914):          beca64e0  00000000  
+I/DEBUG   ( 1914):          beca64e4  00000000  
+I/DEBUG   ( 1914):          beca64e8  00000000  
+I/DEBUG   ( 1914):          beca64ec  000003ff  
+I/DEBUG   ( 1914):          beca64f0  40208660  /system/lib/libsurfaceflinger.so
+I/DEBUG   ( 1914):          beca64f4  beca69e8  [stack]
+I/DEBUG   ( 1914):          beca64f8  41b8b600  [heap]
+I/DEBUG   ( 1914):          beca64fc  00000001  
+I/DEBUG   ( 1914):          beca6500  41b87530  [heap]
+I/DEBUG   ( 1914):          beca6504  00000001  
+I/DEBUG   ( 1914):          beca6508  40196525  /system/lib/libcutils.so
+I/DEBUG   ( 1914):          beca650c  40208660  /system/lib/libsurfaceflinger.so
+I/DEBUG   ( 1914):          beca6510  beca6584  [stack]
+I/DEBUG   ( 1914):          beca6514  00000000  
+I/DEBUG   ( 1914):     #00  beca6518  4017bf2c  /system/bin/linker
+I/DEBUG   ( 1914):          beca651c  00000006  
+I/DEBUG   ( 1914):          beca6520  00000002  
+I/DEBUG   ( 1914):          beca6524  0000077d  
+I/DEBUG   ( 1914):          beca6528  0000077d  
+I/DEBUG   ( 1914):          beca652c  402260b7  /system/lib/libc.so (pthread_kill+54)
+I/DEBUG   ( 1914):     #01  beca6530  4017bf24  /system/bin/linker
+I/DEBUG   ( 1914):          beca6534  00000006  
+I/DEBUG   ( 1914):          beca6538  00000000  
+I/DEBUG   ( 1914):          beca653c  beca69e8  [stack]
+I/DEBUG   ( 1914):          beca6540  41b8b600  [heap]
+I/DEBUG   ( 1914):          beca6544  402262af  /system/lib/libc.so (raise+14)
+I/DEBUG   ( 1914):     #02  beca6548  beca6554  [stack]
+I/DEBUG   ( 1914):          beca654c  4022500f  /system/lib/libc.so
+I/DEBUG   ( 1914): 
+I/DEBUG   ( 1914): memory near r4:
+I/DEBUG   ( 1914):     4017bf0c 00000000 00000000 00000000 00000000  
+I/DEBUG   ( 1914):     4017bf1c beca6a7c 00000000 4017bf24 4017c154  
+I/DEBUG   ( 1914):     4017bf2c 00000002 402c2848 00000000 00000000  
+I/DEBUG   ( 1914):     4017bf3c 4017c194 00000000 00000000 00000000  
+I/DEBUG   ( 1914):     4017bf4c 00000000 00000000 00000000 41b8a2c0  
+I/DEBUG   ( 1914):     4017bf5c 00000000 00000000 00000000 00000000  
+I/DEBUG   ( 1914):     4017bf6c 00000000 00000000 00000000 00000000  
+I/DEBUG   ( 1914):     4017bf7c 00000000 00000000 00000000 00000000  
+I/DEBUG   ( 1914):     4017bf8c 00000000 00000000 00000000 00000000  
+I/DEBUG   ( 1914):     4017bf9c 00000000 00000000 00000000 00000000  
+I/DEBUG   ( 1914):     4017bfac 00000000 00000000 00000000 00000000  
+I/DEBUG   ( 1914):     4017bfbc 00000000 00000000 00000000 00000000  
+I/DEBUG   ( 1914):     4017bfcc 00000000 00000000 00000000 00000000  
+I/DEBUG   ( 1914):     4017bfdc 00000000 00000000 00000000 00000000  
+I/DEBUG   ( 1914):     4017bfec 00000000 00000000 00000000 00000000  
+I/DEBUG   ( 1914):     4017bffc 00000000 00000000 00000000 00000000  
+I/DEBUG   ( 1914): 
+I/DEBUG   ( 1914): memory near r9:
+I/DEBUG   ( 1914):     41b87510 56bcc852 00000001 00000000 00000000  
+I/DEBUG   ( 1914):     41b87520 00000000 00000000 00000000 00000000  
+I/DEBUG   ( 1914):     41b87530 00000000 00000001 00000000 00000000  
+I/DEBUG   ( 1914):     41b87540 00000000 4020f3f0 00000000 00000000  
+I/DEBUG   ( 1914):     41b87550 00000000 00000004 4020e1a8 00000000  
+I/DEBUG   ( 1914):     41b87560 00000000 00000000 00000040 ffffffff  
+I/DEBUG   ( 1914):     41b87570 00000000 beca6a7c 00000001 41b88850  
+I/DEBUG   ( 1914):     41b87580 40261384 00000000 00000000 00000000  
+I/DEBUG   ( 1914):     41b87590 41b87450 4020efe4 00000087 41b83030  
+I/DEBUG   ( 1914):     41b875a0 00000052 00000000 4020e218 00000000  
+I/DEBUG   ( 1914):     41b875b0 00000000 00000000 0000000c 00000000  
+I/DEBUG   ( 1914):     41b875c0 00000000 00000000 00000000 00000000  
+I/DEBUG   ( 1914):     41b875d0 00000000 00000000 00000000 00000000  
+I/DEBUG   ( 1914):     41b875e0 00000000 00000000 00000000 00000000  
+I/DEBUG   ( 1914):     41b875f0 00000000 00000000 00000000 00000000  
+I/DEBUG   ( 1914):     41b87600 00000000 41b87450 41b890d8 00000000  
+I/DEBUG   ( 1914): 
+I/DEBUG   ( 1914): memory near fp:
+I/DEBUG   ( 1914):     beca6a4c 00000000 00000000 400a37e0 400a4e6c  
+I/DEBUG   ( 1914):     beca6a5c 400a4e74 400a4e7c beca6a70 00000000  
+I/DEBUG   ( 1914):     beca6a6c 4016b87d 00000001 beca6b6f 00000000  
+I/DEBUG   ( 1914):     beca6a7c beca6b8a beca6bc7 beca6bef beca6c02  
+I/DEBUG   ( 1914):     beca6a8c beca6c17 beca6c32 beca6c45 beca6c5e  
+I/DEBUG   ( 1914):     beca6a9c beca6c78 beca6c91 beca6eda beca6f04  
+I/DEBUG   ( 1914):     beca6aac beca6f39 beca6f65 beca6f8f beca6fa4  
+I/DEBUG   ( 1914):     beca6abc beca6fc2 00000000 00000010 0008b0d7  
+I/DEBUG   ( 1914):     beca6acc 00000006 00001000 00000011 00000064  
+I/DEBUG   ( 1914):     beca6adc 00000003 400a3034 00000004 00000020  
+I/DEBUG   ( 1914):     beca6aec 00000005 00000008 00000007 4016a000  
+I/DEBUG   ( 1914):     beca6afc 00000008 00000000 00000009 400a377c  
+I/DEBUG   ( 1914):     beca6b0c 0000000b 000003e8 0000000c 000003e8  
+I/DEBUG   ( 1914):     beca6b1c 0000000d 000003eb 0000000e 000003eb  
+I/DEBUG   ( 1914):     beca6b2c 00000017 00000000 00000019 beca6b5b  
+I/DEBUG   ( 1914):     beca6b3c 0000001f beca6fe1 0000000f beca6b6b  
+I/DEBUG   ( 1914): 
+I/DEBUG   ( 1914): memory near sp:
+I/DEBUG   ( 1914):     beca64f8 41b8b600 00000001 41b87530 00000001  
+I/DEBUG   ( 1914):     beca6508 40196525 40208660 beca6584 00000000  
+I/DEBUG   ( 1914):     beca6518 4017bf2c 00000006 00000002 0000077d  
+I/DEBUG   ( 1914):     beca6528 0000077d 402260b7 4017bf24 00000006  
+I/DEBUG   ( 1914):     beca6538 00000000 beca69e8 41b8b600 402262af  
+I/DEBUG   ( 1914):     beca6548 beca6554 4022500f 401d953d ffffffdf  
+I/DEBUG   ( 1914):     beca6558 40176757 745d8cbb 40176641 745d8cbb  
+I/DEBUG   ( 1914):     beca6568 40208660 40208660 40208660 40234914  
+I/DEBUG   ( 1914):     beca6578 40196525 40196ab3 beca6994 73206f6e  
+I/DEBUG   ( 1914):     beca6588 61746975 20656c62 434c4745 69666e6f  
+I/DEBUG   ( 1914):     beca6598 6f662067 2c646e75 76696720 20676e69  
+I/DEBUG   ( 1914):     beca65a8 75007075 00797265 2e696c61 70006f73  
+I/DEBUG   ( 1914):     beca65b8 73636968 572f4820 40176641 401766e6  
+I/DEBUG   ( 1914):     beca65c8 beca6684 40070924 00003816 00000016  
+I/DEBUG   ( 1914):     beca65d8 400bd000 00005ffc 400bd859 400c2ff8  
+I/DEBUG   ( 1914):     beca65e8 400bdb5c 4016b4d3 00000020 beca6680  
+I/DEBUG   ( 1914): 
+I/DEBUG   ( 1914): code around pc:
+I/DEBUG   ( 1914):     4023503c e8bd00f0 e3700a01 912fff1e e2600000  
+I/DEBUG   ( 1914):     4023504c ea006e76 e92d50f0 e3a07f43 ef000000  
+I/DEBUG   ( 1914):     4023505c e8bd50f0 e3700a01 912fff1e e2600000  
+I/DEBUG   ( 1914):     4023506c ea006e6e e92d50f0 e3a070ee ef000000  
+I/DEBUG   ( 1914):     4023507c e8bd50f0 e3700a01 912fff1e e2600000  
+I/DEBUG   ( 1914):     4023508c ea006e66 f200429a bf0080cf f000f891  
+I/DEBUG   ( 1914):     4023509c 4001e92d f040f891 d3532a10 0301ea80  
+I/DEBUG   ( 1914):     402350ac 0303f013 806ef000 d3262ae0 0300f1c0  
+I/DEBUG   ( 1914):     402350bc 030ff013 eba2d021 ea5f0203 bf447cc3  
+I/DEBUG   ( 1914):     402350cc eb01f811 eb01f800 f811bf21 f811cb01  
+I/DEBUG   ( 1914):     402350dc f800eb01 f800cb01 ea5feb01 da037c43  
+I/DEBUG   ( 1914):     402350ec 080df9a1 083df980 f921d303 f900070d  
+I/DEBUG   ( 1914):     402350fc f891071d f891f000 3a40f040 f891d30f  
+I/DEBUG   ( 1914):     4023510c f891f080 f921f0c0 f921020d f891420d  
+I/DEBUG   ( 1914):     4023511c 3a40f0c0 020df900 420df900 f102d2f3  
+I/DEBUG   ( 1914):     4023512c 3a200240 f921d305 3a20020d 020df900  
+I/DEBUG   ( 1914): 
+I/DEBUG   ( 1914): code around lr:
+I/DEBUG   ( 1914):     40226094 4b11ec12 e010447b d10e42bb 6a1f480f  
+I/DEBUG   ( 1914):     402260a4 f7fb4478 f00dec8a 4639ea0c f00e462a  
+I/DEBUG   ( 1914):     402260b4 3001efce 2500d00a 681be009 d1eb2b00  
+I/DEBUG   ( 1914):     402260c4 25034807 f7fb4478 e000ec78 60266825  
+I/DEBUG   ( 1914):     402260d4 bdf84628 0003b30c 0003b300 0003b2f8  
+I/DEBUG   ( 1914):     402260e4 0003b2d4 bf82f7ff 4a3a4b39 47f0e92d  
+I/DEBUG   ( 1914):     402260f4 447b460d 4607b08a 6833589e 930946b1  
+I/DEBUG   ( 1914):     40226104 f9fcf001 f8d04604 2d008000 4628d04a  
+I/DEBUG   ( 1914):     40226114 fe92f00f 4606280f f7ffd846 4287ffe3  
+I/DEBUG   ( 1914):     40226124 200fd106 f00d4629 2800e8da e032d03d  
+I/DEBUG   ( 1914):     40226134 44784829 ebbef7fb 44784828 42b8e015  
+I/DEBUG   ( 1914):     40226144 6a07d113 44784826 ec36f7fb 463b4a25  
+I/DEBUG   ( 1914):     40226154 a8012120 f013447a 2101fa8b f01aa801  
+I/DEBUG   ( 1914):     40226164 1c43fda3 d1044607 6800e015 d1e62800  
+I/DEBUG   ( 1914):     40226174 4638e023 46324629 e914f00d 3ffff1b0  
+I/DEBUG   ( 1914):     40226184 d1024682 29046821 4638d0f3 e964f00d  
+I/ServiceManager( 1910): service 'media.audio_policy' died
+I/ServiceManager( 1910): service 'media.audio_flinger' died
+I/ServiceManager( 1910): service 'media.player' died
+I/ServiceManager( 1910): service 'media.camera' died
+D/WVMDrmPlugIn( 1919): WVMDrmPlugin::onGetSupportInfo : 0
+D/WVMDrmPlugIn( 1919): WVMDrmPlugin::onGetSupportInfo : 0
+I/Netd    ( 2118): Netd 1.0 starting
+I/SurfaceFlinger( 2120): SurfaceFlinger is starting
+I/SurfaceFlinger( 2120): SurfaceFlinger's main thread ready to run. Initializing graphics H/W...
+D/libEGL  ( 2120): loaded /system/lib/egl/libEGL_mali.so
+D/libEGL  ( 2120): loaded /system/lib/egl/libGLESv1_CM_mali.so
+D/libEGL  ( 2120): loaded /system/lib/egl/libGLESv2_mali.so
+E/        ( 2120): ERROR in Mali driver:
+E/        ( 2120):  * Device driver API mismatch
+E/        ( 2120):  * Device driver API version: 29
+E/        ( 2120):  * User space API version: 23
+E/        ( 2120): mali: REVISION=Linux-r3p2-01rel3 BUILD_DATE=Fri Mar 21 13:52:50 KST 2014 
+W/libEGL  ( 2120): eglInitialize(0x1) failed (EGL_BAD_ALLOC)
+I/gralloc ( 2120): using (fd=16)
+I/gralloc ( 2120): id           = s3cfb
+I/gralloc ( 2120): xres         = 720 px
+I/gralloc ( 2120): yres         = 1280 px
+I/gralloc ( 2120): xres_virtual = 720 px
+I/gralloc ( 2120): yres_virtual = 2560 px
+I/gralloc ( 2120): bpp          = 32
+I/gralloc ( 2120): r            = 16:8
+I/gralloc ( 2120): g            =  8:8
+I/gralloc ( 2120): b            =  0:8
+I/gralloc ( 2120): width        = 60 mm (304.799988 dpi)
+I/gralloc ( 2120): height       = 106 mm (306.716980 dpi)
+I/gralloc ( 2120): refresh rate = 60.51 Hz
+I/SurfaceFlinger( 2120): Using composer version 1.0
+W/SurfaceFlinger( 2120): getting VSYNC period from fb HAL: 16527286
+W/SurfaceFlinger( 2120): no suitable EGLConfig found, trying a simpler query
+F/SurfaceFlinger( 2120): no suitable EGLConfig found, giving up
+F/libc    ( 2120): Fatal signal 6 (SIGABRT) at 0x00000848 (code=-6), thread 2120 (surfaceflinger)
+W/SurfaceFlinger( 2120): Ignoring duplicate VSYNC event from HWC (t=0)
+I/DEBUG   ( 1914): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+I/DEBUG   ( 1914): Build fingerprint: 'samsung/i9308xx/i9308:4.3/JSS15J/i9308XXUGMJ9:user/release-keys'
+I/DEBUG   ( 1914): Revision: '12'
+I/DEBUG   ( 1914): pid: 2120, tid: 2120, name: surfaceflinger  >>> /system/bin/surfaceflinger <<<
+I/DEBUG   ( 1914): signal 6 (SIGABRT), code -6 (SI_TKILL), fault addr --------
+I/DEBUG   ( 1914):     r0 00000000  r1 00000848  r2 00000006  r3 00000000
+I/DEBUG   ( 1914):     r4 40117f2c  r5 00000006  r6 00000002  r7 0000010c
+I/DEBUG   ( 1914):     r8 00000001  r9 40ade530  sl 00000001  fp befd8a6c
+I/DEBUG   ( 1914):     ip 00000848  sp befd8518  lr 401350b7  pc 4014405c  cpsr 000f0010
+I/DEBUG   ( 1914):     d0  6174697520676e69  d1  434c474520656c62
+I/DEBUG   ( 1914):     d2  6f66206769666e6f  d3  766967202c646e75
+I/DEBUG   ( 1914):     d4  3fe000000000953a  d5  4024000000000000
+I/DEBUG   ( 1914):     d6  0000000000000000  d7  4398666640000000
+I/DEBUG   ( 1914):     d8  0000000000000000  d9  0000000000000000
+I/DEBUG   ( 1914):     d10 0000000000000000  d11 0000000000000000
+I/DEBUG   ( 1914):     d12 0000000000000000  d13 0000000000000000
+I/DEBUG   ( 1914):     d14 0000000000000000  d15 0000000000000000
+I/DEBUG   ( 1914):     d16 404e40c4a0000000  d17 41cdcd6500000000
+I/DEBUG   ( 1914):     d18 416f85f6cd117aa9  d19 0000000000000000
+I/DEBUG   ( 1914):     d20 401833d080000000  d21 404e40c4a0000000
+I/DEBUG   ( 1914):     d22 0000000000000000  d23 0000000000000000
+I/DEBUG   ( 1914):     d24 0000000000000000  d25 0000000000000000
+I/DEBUG   ( 1914):     d26 404e40c4a0000000  d27 0000000000000000
+I/DEBUG   ( 1914):     d28 0000000000000000  d29 0000000000000000
+I/DEBUG   ( 1914):     d30 0000000000000000  d31 4000000000000000
+I/DEBUG   ( 1914):     scr 20000010
+I/DEBUG   ( 1914): 
+I/DEBUG   ( 1914): backtrace:
+I/DEBUG   ( 1914):     #00  pc 0002205c  /system/lib/libc.so (tgkill+12)
+I/DEBUG   ( 1914):     #01  pc 000130b3  /system/lib/libc.so (pthread_kill+50)
+I/DEBUG   ( 1914):     #02  pc 000132ab  /system/lib/libc.so (raise+10)
+I/DEBUG   ( 1914):     #03  pc 0001200b  /system/lib/libc.so
+I/DEBUG   ( 1914):     #04  pc 00021910  /system/lib/libc.so (abort+4)
+I/DEBUG   ( 1914):     #05  pc 00006aaf  /system/lib/libcutils.so (__android_log_assert+86)
+I/DEBUG   ( 1914):     #06  pc 0001d11f  /system/lib/libsurfaceflinger.so (android::SurfaceFlinger::init()+1294)
+I/DEBUG   ( 1914):     #07  pc 000008a7  /system/bin/surfaceflinger
+I/DEBUG   ( 1914):     #08  pc 0000e42b  /system/lib/libc.so (__libc_init+50)
+I/DEBUG   ( 1914):     #09  pc 000007dc  /system/bin/surfaceflinger
+I/DEBUG   ( 1914): 
+I/DEBUG   ( 1914): stack:
+I/DEBUG   ( 1914):          befd84d8  00000000  
+I/DEBUG   ( 1914):          befd84dc  00000000  
+I/DEBUG   ( 1914):          befd84e0  00000000  
+I/DEBUG   ( 1914):          befd84e4  00000000  
+I/DEBUG   ( 1914):          befd84e8  00000000  
+I/DEBUG   ( 1914):          befd84ec  000003ff  
+I/DEBUG   ( 1914):          befd84f0  40243660  /system/lib/libsurfaceflinger.so
+I/DEBUG   ( 1914):          befd84f4  befd89e8  [stack]
+I/DEBUG   ( 1914):          befd84f8  40077390  
+I/DEBUG   ( 1914):          befd84fc  00000001  
+I/DEBUG   ( 1914):          befd8500  40ade530  [heap]
+I/DEBUG   ( 1914):          befd8504  00000001  
+I/DEBUG   ( 1914):          befd8508  40084525  /system/lib/libcutils.so
+I/DEBUG   ( 1914):          befd850c  40243660  /system/lib/libsurfaceflinger.so
+I/DEBUG   ( 1914):          befd8510  befd8584  [stack]
+I/DEBUG   ( 1914):          befd8514  00000000  
+I/DEBUG   ( 1914):     #00  befd8518  40117f2c  /system/bin/linker
+I/DEBUG   ( 1914):          befd851c  00000006  
+I/DEBUG   ( 1914):          befd8520  00000002  
+I/DEBUG   ( 1914):          befd8524  00000848  
+I/DEBUG   ( 1914):          befd8528  00000848  
+I/DEBUG   ( 1914):          befd852c  401350b7  /system/lib/libc.so (pthread_kill+54)
+I/DEBUG   ( 1914):     #01  befd8530  40117f24  /system/bin/linker
+I/DEBUG   ( 1914):          befd8534  00000006  
+I/DEBUG   ( 1914):          befd8538  00000000  
+I/DEBUG   ( 1914):          befd853c  befd89e8  [stack]
+I/DEBUG   ( 1914):          befd8540  40077390  
+I/DEBUG   ( 1914):          befd8544  401352af  /system/lib/libc.so (raise+14)
+I/DEBUG   ( 1914):     #02  befd8548  befd8554  [stack]
+I/DEBUG   ( 1914):          befd854c  4013400f  /system/lib/libc.so
+I/DEBUG   ( 1914): 
+I/DEBUG   ( 1914): memory near r4:
+I/DEBUG   ( 1914):     40117f0c 00000000 00000000 00000000 00000000  
+I/DEBUG   ( 1914):     40117f1c befd8a7c 00000000 40117f24 40118154  
+I/DEBUG   ( 1914):     40117f2c 00000002 40212848 00000000 00000000  
+I/DEBUG   ( 1914):     40117f3c 40118194 00000000 00000000 00000000  
+I/DEBUG   ( 1914):     40117f4c 00000000 00000000 40ae0ac8 00000000  
+I/DEBUG   ( 1914):     40117f5c 00000000 00000000 00000000 00000000  
+I/DEBUG   ( 1914):     40117f6c 00000000 00000000 00000000 00000000  
+I/DEBUG   ( 1914):     40117f7c 00000000 00000000 00000000 00000000  
+I/DEBUG   ( 1914):     40117f8c 00000000 00000000 00000000 00000000  
+I/DEBUG   ( 1914):     40117f9c 00000000 00000000 00000000 00000000  
+I/DEBUG   ( 1914):     40117fac 00000000 00000000 00000000 00000000  
+I/DEBUG   ( 1914):     40117fbc 00000000 00000000 00000000 00000000  
+I/DEBUG   ( 1914):     40117fcc 00000000 00000000 00000000 00000000  
+I/DEBUG   ( 1914):     40117fdc 00000000 00000000 00000000 00000000  
+I/DEBUG   ( 1914):     40117fec 00000000 00000000 00000000 00000000  
+I/DEBUG   ( 1914):     40117ffc 00000000 00000000 00000000 00000000  
+I/DEBUG   ( 1914): 
+I/DEBUG   ( 1914): memory near r9:
+I/DEBUG   ( 1914):     40ade510 825d9340 00000002 00000000 00000000  
+I/DEBUG   ( 1914):     40ade520 00000000 00000000 00000000 00000000  
+I/DEBUG   ( 1914):     40ade530 00000000 00000001 00000000 00000000  
+I/DEBUG   ( 1914):     40ade540 00000000 4024a3f0 00000000 00000000  
+I/DEBUG   ( 1914):     40ade550 00000000 00000004 402491a8 00000000  
+I/DEBUG   ( 1914):     40ade560 00000000 00000000 00000040 ffffffff  
+I/DEBUG   ( 1914):     40ade570 00000000 befd8a7c 00000001 40adf850  
+I/DEBUG   ( 1914):     40ade580 40170384 00000000 00000000 00000000  
+I/DEBUG   ( 1914):     40ade590 40ade450 40249fe4 00000087 40ada030  
+I/DEBUG   ( 1914):     40ade5a0 00000040 00000000 40249218 00000000  
+I/DEBUG   ( 1914):     40ade5b0 00000000 00000000 0000000c 00000000  
+I/DEBUG   ( 1914):     40ade5c0 00000000 00000000 00000000 00000000  
+I/DEBUG   ( 1914):     40ade5d0 00000000 00000000 00000000 00000000  
+I/DEBUG   ( 1914):     40ade5e0 00000000 00000000 00000000 00000000  
+I/DEBUG   ( 1914):     40ade5f0 00000000 00000000 00000000 00000000  
+I/DEBUG   ( 1914):     40ade600 00000000 40ade450 40adfb68 00000000  
+I/DEBUG   ( 1914): 
+I/DEBUG   ( 1914): memory near fp:
+I/DEBUG   ( 1914):     befd8a4c 00000000 00000000 4003f7e0 40040e6c  
+I/DEBUG   ( 1914):     befd8a5c 40040e74 40040e7c befd8a70 00000000  
+I/DEBUG   ( 1914):     befd8a6c 4010787d 00000001 befd8b6f 00000000  
+I/DEBUG   ( 1914):     befd8a7c befd8b8a befd8bc7 befd8bef befd8c02  
+I/DEBUG   ( 1914):     befd8a8c befd8c17 befd8c32 befd8c45 befd8c5e  
+I/DEBUG   ( 1914):     befd8a9c befd8c78 befd8c91 befd8eda befd8f04  
+I/DEBUG   ( 1914):     befd8aac befd8f39 befd8f65 befd8f8f befd8fa4  
+I/DEBUG   ( 1914):     befd8abc befd8fc2 00000000 00000010 0008b0d7  
+I/DEBUG   ( 1914):     befd8acc 00000006 00001000 00000011 00000064  
+I/DEBUG   ( 1914):     befd8adc 00000003 4003f034 00000004 00000020  
+I/DEBUG   ( 1914):     befd8aec 00000005 00000008 00000007 40106000  
+I/DEBUG   ( 1914):     befd8afc 00000008 00000000 00000009 4003f77c  
+I/DEBUG   ( 1914):     befd8b0c 0000000b 000003e8 0000000c 000003e8  
+I/DEBUG   ( 1914):     befd8b1c 0000000d 000003eb 0000000e 000003eb  
+I/DEBUG   ( 1914):     befd8b2c 00000017 00000000 00000019 befd8b5b  
+I/DEBUG   ( 1914):     befd8b3c 0000001f befd8fe1 0000000f befd8b6b  
+I/DEBUG   ( 1914): 
+I/DEBUG   ( 1914): memory near sp:
+I/DEBUG   ( 1914):     befd84f8 40077390 00000001 40ade530 00000001  
+I/DEBUG   ( 1914):     befd8508 40084525 40243660 befd8584 00000000  
+I/DEBUG   ( 1914):     befd8518 40117f2c 00000006 00000002 00000848  
+I/DEBUG   ( 1914):     befd8528 00000848 401350b7 40117f24 00000006  
+I/DEBUG   ( 1914):     befd8538 00000000 befd89e8 40077390 401352af  
+I/DEBUG   ( 1914):     befd8548 befd8554 4013400f 4045353d ffffffdf  
+I/DEBUG   ( 1914):     befd8558 40112757 922fbd5b 40112641 922fbd5b  
+I/DEBUG   ( 1914):     befd8568 40243660 40243660 40243660 40143914  
+I/DEBUG   ( 1914):     befd8578 40084525 40084ab3 befd8994 73206f6e  
+I/DEBUG   ( 1914):     befd8588 61746975 20656c62 434c4745 69666e6f  
+I/DEBUG   ( 1914):     befd8598 6f662067 2c646e75 76696720 20676e69  
+I/DEBUG   ( 1914):     befd85a8 75007075 00797265 2e696c61 70006f73  
+I/DEBUG   ( 1914):     befd85b8 73636968 572f4820 40112641 401126e6  
+I/DEBUG   ( 1914):     befd85c8 befd8684 400bc924 00003816 00000016  
+I/DEBUG   ( 1914):     befd85d8 40042000 00005ffc 40042859 40047ff8  
+I/DEBUG   ( 1914):     befd85e8 40042b5c 401074d3 00000020 befd8680  
+I/DEBUG   ( 1914): 
+I/DEBUG   ( 1914): code around pc:
+I/DEBUG   ( 1914):     4014403c e8bd00f0 e3700a01 912fff1e e2600000  
+I/DEBUG   ( 1914):     4014404c ea006e76 e92d50f0 e3a07f43 ef000000  
+I/DEBUG   ( 1914):     4014405c e8bd50f0 e3700a01 912fff1e e2600000  
+I/DEBUG   ( 1914):     4014406c ea006e6e e92d50f0 e3a070ee ef000000  
+I/DEBUG   ( 1914):     4014407c e8bd50f0 e3700a01 912fff1e e2600000  
+I/DEBUG   ( 1914):     4014408c ea006e66 f200429a bf0080cf f000f891  
+I/DEBUG   ( 1914):     4014409c 4001e92d f040f891 d3532a10 0301ea80  
+I/DEBUG   ( 1914):     401440ac 0303f013 806ef000 d3262ae0 0300f1c0  
+I/DEBUG   ( 1914):     401440bc 030ff013 eba2d021 ea5f0203 bf447cc3  
+I/DEBUG   ( 1914):     401440cc eb01f811 eb01f800 f811bf21 f811cb01  
+I/DEBUG   ( 1914):     401440dc f800eb01 f800cb01 ea5feb01 da037c43  
+I/DEBUG   ( 1914):     401440ec 080df9a1 083df980 f921d303 f900070d  
+I/DEBUG   ( 1914):     401440fc f891071d f891f000 3a40f040 f891d30f  
+I/DEBUG   ( 1914):     4014410c f891f080 f921f0c0 f921020d f891420d  
+I/DEBUG   ( 1914):     4014411c 3a40f0c0 020df900 420df900 f102d2f3  
+I/DEBUG   ( 1914):     4014412c 3a200240 f921d305 3a20020d 020df900  
+I/DEBUG   ( 1914): 
+I/DEBUG   ( 1914): code around lr:
+I/DEBUG   ( 1914):     40135094 4b11ec12 e010447b d10e42bb 6a1f480f  
+I/DEBUG   ( 1914):     401350a4 f7fb4478 f00dec8a 4639ea0c f00e462a  
+I/DEBUG   ( 1914):     401350b4 3001efce 2500d00a 681be009 d1eb2b00  
+I/DEBUG   ( 1914):     401350c4 25034807 f7fb4478 e000ec78 60266825  
+I/DEBUG   ( 1914):     401350d4 bdf84628 0003b30c 0003b300 0003b2f8  
+I/DEBUG   ( 1914):     401350e4 0003b2d4 bf82f7ff 4a3a4b39 47f0e92d  
+I/DEBUG   ( 1914):     401350f4 447b460d 4607b08a 6833589e 930946b1  
+I/DEBUG   ( 1914):     40135104 f9fcf001 f8d04604 2d008000 4628d04a  
+I/DEBUG   ( 1914):     40135114 fe92f00f 4606280f f7ffd846 4287ffe3  
+I/DEBUG   ( 1914):     40135124 200fd106 f00d4629 2800e8da e032d03d  
+I/DEBUG   ( 1914):     40135134 44784829 ebbef7fb 44784828 42b8e015  
+I/DEBUG   ( 1914):     40135144 6a07d113 44784826 ec36f7fb 463b4a25  
+I/DEBUG   ( 1914):     40135154 a8012120 f013447a 2101fa8b f01aa801  
+I/DEBUG   ( 1914):     40135164 1c43fda3 d1044607 6800e015 d1e62800  
+I/DEBUG   ( 1914):     40135174 4638e023 46324629 e914f00d 3ffff1b0  
+I/DEBUG   ( 1914):     40135184 d1024682 29046821 4638d0f3 e964f00d  
+I/mediaserver( 2122): ServiceManager: 0x40caa1b0
+I/AudioFlinger( 2122): Using default 3000 mSec as standby time.
+E/MediaPlayerFactory( 2122): calling dlopen on FACTORY_LIB
+E/MediaPlayerFactory( 2122): Failed to open FACTORY_LIB Error : dlopen failed: library "libdashplayer.so" not found 
+I/CameraService( 2122): CameraService started (pid=2122)
+I/CameraService( 2122): Loaded "m0xx Camera Wrapper" camera module
+D/SecCameraHardware( 2122): LSIHAL int android::HAL_getNumberOfCameras()
+I/AudioPolicyManagerBase( 2122): loadAudioPolicyConfig() loaded /system/etc/audio_policy.conf
+V/audio_hw_primary( 2122): Reading configuration from /system/etc/sound/i9308
+E/audio_hw_primary( 2122): Failed to open /system/etc/sound/i9308
+E/AudioFlinger( 2122): int android::load_audio_interface(const char*, audio_hw_device_t**) couldn't open audio hw device in audio.primary (Invalid argument)
+I/AudioFlinger( 2122): loadHwModule() error -22 loading module primary 
+W/AudioPolicyManagerBase( 2122): could not open HW module primary
+I/audio_a2dp_hw( 2122): adev_open:  adev_open in A2dp_hw module
+I/AudioFlinger( 2122): loadHwModule() Loaded a2dp audio interface from A2DP Audio HW HAL (audio) handle 1
+I/AudioFlinger( 2122): loadHwModule() Loaded usb audio interface from USB audio HW HAL (audio) handle 2
+I/r_submix( 2122): adev_open(name=audio_hw_if)
+I/r_submix( 2122): adev_init_check()
+I/AudioFlinger( 2122): loadHwModule() Loaded r_submix audio interface from Wifi Display audio HAL (audio) handle 3
+E/AudioPolicyManagerBase( 2122): Not output found for attached devices 00000003
+E/AudioPolicyManagerBase( 2122): Failed to open primary output
+E/AudioPolicyManagerBase( 2122): getDeviceForStrategy() speaker device not found for STRATEGY_SONIFICATION
+E/AudioPolicyManagerBase( 2122): getDeviceForStrategy() speaker device not found for STRATEGY_SONIFICATION
+E/AudioPolicyService( 2122): couldn't init_check the audio policy (No such device)
+I/ServiceManager( 1910): service 'media.audio_policy' died
+I/ServiceManager( 1910): service 'media.audio_flinger' died
+I/ServiceManager( 1910): service 'media.player' died
+I/ServiceManager( 1910): service 'media.camera' died
+I/Netd    ( 2160): Netd 1.0 starting
+I/SurfaceFlinger( 2162): SurfaceFlinger is starting
+I/SurfaceFlinger( 2162): SurfaceFlinger's main thread ready to run. Initializing graphics H/W...
+D/libEGL  ( 2162): loaded /system/lib/egl/libEGL_mali.so
+D/libEGL  ( 2162): loaded /system/lib/egl/libGLESv1_CM_mali.so
+D/libEGL  ( 2162): loaded /system/lib/egl/libGLESv2_mali.so
+E/        ( 2162): ERROR in Mali driver:
+E/        ( 2162):  * Device driver API mismatch
+E/        ( 2162):  * Device driver API version: 29
+E/        ( 2162):  * User space API version: 23
+E/        ( 2162): mali: REVISION=Linux-r3p2-01rel3 BUILD_DATE=Fri Mar 21 13:52:50 KST 2014 
+W/libEGL  ( 2162): eglInitialize(0x1) failed (EGL_BAD_ALLOC)
+I/gralloc ( 2162): using (fd=16)
+I/gralloc ( 2162): id           = s3cfb
+I/gralloc ( 2162): xres         = 720 px
+I/gralloc ( 2162): yres         = 1280 px
+I/gralloc ( 2162): xres_virtual = 720 px
+I/gralloc ( 2162): yres_virtual = 2560 px
+I/gralloc ( 2162): bpp          = 32
+I/gralloc ( 2162): r            = 16:8
+I/gralloc ( 2162): g            =  8:8
+I/gralloc ( 2162): b            =  0:8
+I/gralloc ( 2162): width        = 60 mm (304.799988 dpi)
+I/gralloc ( 2162): height       = 106 mm (306.716980 dpi)
+I/gralloc ( 2162): refresh rate = 60.51 Hz
+I/SurfaceFlinger( 2162): Using composer version 1.0
+W/SurfaceFlinger( 2162): getting VSYNC period from fb HAL: 16527286
+W/SurfaceFlinger( 2162): no suitable EGLConfig found, trying a simpler query
+F/SurfaceFlinger( 2162): no suitable EGLConfig found, giving up
+F/libc    ( 2162): Fatal signal 6 (SIGABRT) at 0x00000872 (code=-6), thread 2162 (surfaceflinger)
+W/SurfaceFlinger( 2162): Ignoring duplicate VSYNC event from HWC (t=0)
+I/DEBUG   ( 1914): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+I/DEBUG   ( 1914): Build fingerprint: 'samsung/i9308xx/i9308:4.3/JSS15J/i9308XXUGMJ9:user/release-keys'
+I/DEBUG   ( 1914): Revision: '12'
+I/DEBUG   ( 1914): pid: 2162, tid: 2162, name: surfaceflinger  >>> /system/bin/surfaceflinger <<<
+I/DEBUG   ( 1914): signal 6 (SIGABRT), code -6 (SI_TKILL), fault addr --------
+I/mediaserver( 2164): ServiceManager: 0x40d63448
+I/AudioFlinger( 2164): Using default 3000 mSec as standby time.
+E/MediaPlayerFactory( 2164): calling dlopen on FACTORY_LIB
+E/MediaPlayerFactory( 2164): Failed to open FACTORY_LIB Error : dlopen failed: library "libdashplayer.so" not found 
+I/CameraService( 2164): CameraService started (pid=2164)
+I/CameraService( 2164): Loaded "m0xx Camera Wrapper" camera module
+I/DEBUG   ( 1914):     r0 00000000  r1 00000872  r2 00000006  r3 00000000
+I/DEBUG   ( 1914):     r4 400bef2c  r5 00000006  r6 00000002  r7 0000010c
+I/DEBUG   ( 1914):     r8 00000001  r9 41a11530  sl 00000001  fp beafea6c
+I/DEBUG   ( 1914):     ip 00000872  sp beafe518  lr 401160b7  pc 4012505c  cpsr 000f0010
+I/DEBUG   ( 1914):     d0  6174697520676e69  d1  434c474520656c62
+I/DEBUG   ( 1914):     d2  6f66206769666e6f  d3  766967202c646e75
+I/DEBUG   ( 1914):     d4  3fe000000000953a  d5  4024000000000000
+I/DEBUG   ( 1914):     d6  0000000000000000  d7  4398666640000000
+I/DEBUG   ( 1914):     d8  0000000000000000  d9  0000000000000000
+I/DEBUG   ( 1914):     d10 0000000000000000  d11 0000000000000000
+I/DEBUG   ( 1914):     d12 0000000000000000  d13 0000000000000000
+I/DEBUG   ( 1914):     d14 0000000000000000  d15 0000000000000000
+I/DEBUG   ( 1914):     d16 404e40c4a0000000  d17 41cdcd6500000000
+I/DEBUG   ( 1914):     d18 416f85f6cd117aa9  d19 0000000000000000
+I/DEBUG   ( 1914):     d20 401833d080000000  d21 404e40c4a0000000
+I/DEBUG   ( 1914):     d22 0000000000000000  d23 0000000000000000
+I/DEBUG   ( 1914):     d24 0000000000000000  d25 0000000000000000
+I/DEBUG   ( 1914):     d26 404e40c4a0000000  d27 0000000000000000
+I/DEBUG   ( 1914):     d28 0000000000000000  d29 0000000000000000
+I/DEBUG   ( 1914):     d30 0000000000000000  d31 4000000000000000
+I/DEBUG   ( 1914):     scr 20000010
+D/SecCameraHardware( 2164): LSIHAL int android::HAL_getNumberOfCameras()
+I/AudioPolicyManagerBase( 2164): loadAudioPolicyConfig() loaded /system/etc/audio_policy.conf
+I/DEBUG   ( 1914): 
+I/DEBUG   ( 1914): backtrace:
+I/DEBUG   ( 1914):     #00  pc 0002205c  /system/lib/libc.so (tgkill+12)
+I/DEBUG   ( 1914):     #01  pc 000130b3  /system/lib/libc.so (pthread_kill+50)
+I/DEBUG   ( 1914):     #02  pc 000132ab  /system/lib/libc.so (raise+10)
+I/DEBUG   ( 1914):     #03  pc 0001200b  /system/lib/libc.so
+I/DEBUG   ( 1914):     #04  pc 00021910  /system/lib/libc.so (abort+4)
+I/DEBUG   ( 1914):     #05  pc 00006aaf  /system/lib/libcutils.so (__android_log_assert+86)
+I/DEBUG   ( 1914):     #06  pc 0001d11f  /system/lib/libsurfaceflinger.so (android::SurfaceFlinger::init()+1294)
+I/DEBUG   ( 1914):     #07  pc 000008a7  /system/bin/surfaceflinger
+I/DEBUG   ( 1914):     #08  pc 0000e42b  /system/lib/libc.so (__libc_init+50)
+I/DEBUG   ( 1914):     #09  pc 000007dc  /system/bin/surfaceflinger
+I/DEBUG   ( 1914): 
+I/DEBUG   ( 1914): stack:
+I/DEBUG   ( 1914):          beafe4d8  00000000  
+I/DEBUG   ( 1914):          beafe4dc  00000000  
+I/DEBUG   ( 1914):          beafe4e0  00000000  
+I/DEBUG   ( 1914):          beafe4e4  00000000  
+I/DEBUG   ( 1914):          beafe4e8  00000000  
+I/DEBUG   ( 1914):          beafe4ec  000003ff  
+I/DEBUG   ( 1914):          beafe4f0  40197660  /system/lib/libsurfaceflinger.so
+I/DEBUG   ( 1914):          beafe4f4  beafe9e8  [stack]
+I/DEBUG   ( 1914):          beafe4f8  41a155c8  [heap]
+I/DEBUG   ( 1914):          beafe4fc  00000001  
+I/DEBUG   ( 1914):          beafe500  41a11530  [heap]
+I/DEBUG   ( 1914):          beafe504  00000001  
+I/DEBUG   ( 1914):          beafe508  400cb525  /system/lib/libcutils.so
+I/DEBUG   ( 1914):          beafe50c  40197660  /system/lib/libsurfaceflinger.so
+I/DEBUG   ( 1914):          beafe510  beafe584  [stack]
+I/DEBUG   ( 1914):          beafe514  00000000  
+I/DEBUG   ( 1914):     #00  beafe518  400bef2c  /system/bin/linker
+I/DEBUG   ( 1914):          beafe51c  00000006  
+I/DEBUG   ( 1914):          beafe520  00000002  
+I/DEBUG   ( 1914):          beafe524  00000872  
+I/DEBUG   ( 1914):          beafe528  00000872  
+I/DEBUG   ( 1914):          beafe52c  401160b7  /system/lib/libc.so (pthread_kill+54)
+I/DEBUG   ( 1914):     #01  beafe530  400bef24  /system/bin/linker
+I/DEBUG   ( 1914):          beafe534  00000006  
+I/DEBUG   ( 1914):          beafe538  00000000  
+I/DEBUG   ( 1914):          beafe53c  beafe9e8  [stack]
+I/DEBUG   ( 1914):          beafe540  41a155c8  [heap]
+I/DEBUG   ( 1914):          beafe544  401162af  /system/lib/libc.so (raise+14)
+I/DEBUG   ( 1914):     #02  beafe548  beafe554  [stack]
+I/DEBUG   ( 1914):          beafe54c  4011500f  /system/lib/libc.so
+V/audio_hw_primary( 2164): Reading configuration from /system/etc/sound/i9308
+E/audio_hw_primary( 2164): Failed to open /system/etc/sound/i9308
+E/AudioFlinger( 2164): int android::load_audio_interface(const char*, audio_hw_device_t**) couldn't open audio hw device in audio.primary (Invalid argument)
+I/AudioFlinger( 2164): loadHwModule() error -22 loading module primary 
+W/AudioPolicyManagerBase( 2164): could not open HW module primary
+I/DEBUG   ( 1914): 
+I/DEBUG   ( 1914): memory near r4:
+I/audio_a2dp_hw( 2164): adev_open:  adev_open in A2dp_hw module
+I/DEBUG   ( 1914):     400bef0c 00000000 00000000 00000000 00000000  
+I/AudioFlinger( 2164): loadHwModule() Loaded a2dp audio interface from A2DP Audio HW HAL (audio) handle 1
+I/DEBUG   ( 1914):     400bef1c beafea7c 00000000 400bef24 400bf154  
+I/DEBUG   ( 1914):     400bef2c 00000002 40217848 00000000 00000000  
+I/DEBUG   ( 1914):     400bef3c 400bf194 00000000 00000000 00000000  
+I/DEBUG   ( 1914):     400bef4c 00000000 00000000 00000000 41a142e0  
+I/DEBUG   ( 1914):     400bef5c 00000000 00000000 00000000 00000000  
+I/DEBUG   ( 1914):     400bef6c 00000000 00000000 00000000 00000000  
+I/AudioFlinger( 2164): loadHwModule() Loaded usb audio interface from USB audio HW HAL (audio) handle 2
+I/DEBUG   ( 1914):     400bef7c 00000000 00000000 00000000 00000000  
+I/DEBUG   ( 1914):     400bef8c 00000000 00000000 00000000 00000000  
+I/DEBUG   ( 1914):     400bef9c 00000000 00000000 00000000 00000000  
+I/DEBUG   ( 1914):     400befac 00000000 00000000 00000000 00000000  
+I/DEBUG   ( 1914):     400befbc 00000000 00000000 00000000 00000000  
+I/DEBUG   ( 1914):     400befcc 00000000 00000000 00000000 00000000  
+I/DEBUG   ( 1914):     400befdc 00000000 00000000 00000000 00000000  
+I/DEBUG   ( 1914):     400befec 00000000 00000000 00000000 00000000  
+I/DEBUG   ( 1914):     400beffc 00000000 00000000 00000000 00000000  
+I/DEBUG   ( 1914): 
+I/DEBUG   ( 1914): memory near r9:
+I/DEBUG   ( 1914):     41a11510 bd47f2f8 00000003 00000000 00000000  
+I/r_submix( 2164): adev_open(name=audio_hw_if)
+I/r_submix( 2164): adev_init_check()
+I/AudioFlinger( 2164): loadHwModule() Loaded r_submix audio interface from Wifi Display audio HAL (audio) handle 3
+E/AudioPolicyManagerBase( 2164): Not output found for attached devices 00000003
+E/AudioPolicyManagerBase( 2164): Failed to open primary output
+E/AudioPolicyManagerBase( 2164): getDeviceForStrategy() speaker device not found for STRATEGY_SONIFICATION
+I/DEBUG   ( 1914):     41a11520 00000000 00000000 00000000 00000000  
+E/AudioPolicyManagerBase( 2164): getDeviceForStrategy() speaker device not found for STRATEGY_SONIFICATION
+E/AudioPolicyService( 2164): couldn't init_check the audio policy (No such device)
+I/DEBUG   ( 1914):     41a11530 00000000 00000001 00000000 00000000  
+I/DEBUG   ( 1914):     41a11540 00000000 4019e3f0 00000000 00000000  
+I/DEBUG   ( 1914):     41a11550 00000000 00000004 4019d1a8 00000000  
+I/DEBUG   ( 1914):     41a11560 00000000 00000000 00000040 ffffffff  
+I/DEBUG   ( 1914):     41a11570 00000000 beafea7c 00000001 41a12850  
+I/DEBUG   ( 1914):     41a11580 40151384 00000000 00000000 00000000  
+I/DEBUG   ( 1914):     41a11590 41a11450 4019dfe4 00000087 41a0d030  
+I/DEBUG   ( 1914):     41a115a0 000000f8 00000000 4019d218 00000000  
+I/DEBUG   ( 1914):     41a115b0 00000000 00000000 0000000c 00000000  
+I/DEBUG   ( 1914):     41a115c0 00000000 00000000 00000000 00000000  
+I/DEBUG   ( 1914):     41a115d0 00000000 00000000 00000000 00000000  
+I/DEBUG   ( 1914):     41a115e0 00000000 00000000 00000000 00000000  
+I/DEBUG   ( 1914):     41a115f0 00000000 00000000 00000000 00000000  
+I/DEBUG   ( 1914):     41a11600 00000000 41a11450 41a13398 00000000  
+I/DEBUG   ( 1914): 
+I/DEBUG   ( 1914): memory near fp:
+I/DEBUG   ( 1914):     beafea4c 00000000 00000000 400237e0 40024e6c  
+I/DEBUG   ( 1914):     beafea5c 40024e74 40024e7c beafea70 00000000  
+I/DEBUG   ( 1914):     beafea6c 400ae87d 00000001 beafeb6f 00000000  
+I/DEBUG   ( 1914):     beafea7c beafeb8a beafebc7 beafebef beafec02  
+I/DEBUG   ( 1914):     beafea8c beafec17 beafec32 beafec45 beafec5e  
+I/DEBUG   ( 1914):     beafea9c beafec78 beafec91 beafeeda beafef04  
+I/DEBUG   ( 1914):     beafeaac beafef39 beafef65 beafef8f beafefa4  
+I/DEBUG   ( 1914):     beafeabc beafefc2 00000000 00000010 0008b0d7  
+I/DEBUG   ( 1914):     beafeacc 00000006 00001000 00000011 00000064  
+I/DEBUG   ( 1914):     beafeadc 00000003 40023034 00000004 00000020  
+I/DEBUG   ( 1914):     beafeaec 00000005 00000008 00000007 400ad000  
+I/DEBUG   ( 1914):     beafeafc 00000008 00000000 00000009 4002377c  
+I/DEBUG   ( 1914):     beafeb0c 0000000b 000003e8 0000000c 000003e8  
+I/DEBUG   ( 1914):     beafeb1c 0000000d 000003eb 0000000e 000003eb  
+I/DEBUG   ( 1914):     beafeb2c 00000017 00000000 00000019 beafeb5b  
+I/DEBUG   ( 1914):     beafeb3c 0000001f beafefe1 0000000f beafeb6b  
+I/DEBUG   ( 1914): 
+I/DEBUG   ( 1914): memory near sp:
+I/DEBUG   ( 1914):     beafe4f8 41a155c8 00000001 41a11530 00000001  
+I/DEBUG   ( 1914):     beafe508 400cb525 40197660 beafe584 00000000  
+I/DEBUG   ( 1914):     beafe518 400bef2c 00000006 00000002 00000872  
+I/DEBUG   ( 1914):     beafe528 00000872 401160b7 400bef24 00000006  
+I/DEBUG   ( 1914):     beafe538 00000000 beafe9e8 41a155c8 401162af  
+I/DEBUG   ( 1914):     beafe548 beafe554 4011500f 401aa53d ffffffdf  
+I/DEBUG   ( 1914):     beafe558 400b9757 90add282 400b9641 90add282  
+I/DEBUG   ( 1914):     beafe568 40197660 40197660 40197660 40124914  
+I/DEBUG   ( 1914):     beafe578 400cb525 400cbab3 beafe994 73206f6e  
+I/DEBUG   ( 1914):     beafe588 61746975 20656c62 434c4745 69666e6f  
+I/DEBUG   ( 1914):     beafe598 6f662067 2c646e75 76696720 20676e69  
+I/DEBUG   ( 1914):     beafe5a8 75007075 00797265 2e696c61 70006f73  
+I/DEBUG   ( 1914):     beafe5b8 73636968 572f4820 400b9641 400b96e6  
+I/DEBUG   ( 1914):     beafe5c8 beafe684 40064924 00003816 00000016  
+I/DEBUG   ( 1914):     beafe5d8 400ee000 00005ffc 400ee859 400f3ff8  
+I/DEBUG   ( 1914):     beafe5e8 400eeb5c 400ae4d3 00000020 beafe680  
+I/DEBUG   ( 1914): 
+I/DEBUG   ( 1914): code around pc:
+I/DEBUG   ( 1914):     4012503c e8bd00f0 e3700a01 912fff1e e2600000  
+I/DEBUG   ( 1914):     4012504c ea006e76 e92d50f0 e3a07f43 ef000000  
+I/DEBUG   ( 1914):     4012505c e8bd50f0 e3700a01 912fff1e e2600000  
+I/DEBUG   ( 1914):     4012506c ea006e6e e92d50f0 e3a070ee ef000000  
+I/DEBUG   ( 1914):     4012507c e8bd50f0 e3700a01 912fff1e e2600000  
+I/DEBUG   ( 1914):     4012508c ea006e66 f200429a bf0080cf f000f891  
+I/DEBUG   ( 1914):     4012509c 4001e92d f040f891 d3532a10 0301ea80  
+I/DEBUG   ( 1914):     401250ac 0303f013 806ef000 d3262ae0 0300f1c0  
+I/DEBUG   ( 1914):     401250bc 030ff013 eba2d021 ea5f0203 bf447cc3  
+I/DEBUG   ( 1914):     401250cc eb01f811 eb01f800 f811bf21 f811cb01  
+I/DEBUG   ( 1914):     401250dc f800eb01 f800cb01 ea5feb01 da037c43  
+I/DEBUG   ( 1914):     401250ec 080df9a1 083df980 f921d303 f900070d  
+I/DEBUG   ( 1914):     401250fc f891071d f891f000 3a40f040 f891d30f  
+I/DEBUG   ( 1914):     4012510c f891f080 f921f0c0 f921020d f891420d  
+I/DEBUG   ( 1914):     4012511c 3a40f0c0 020df900 420df900 f102d2f3  
+I/DEBUG   ( 1914):     4012512c 3a200240 f921d305 3a20020d 020df900  
+I/DEBUG   ( 1914): 
+I/DEBUG   ( 1914): code around lr:
+I/DEBUG   ( 1914):     40116094 4b11ec12 e010447b d10e42bb 6a1f480f  
+I/DEBUG   ( 1914):     401160a4 f7fb4478 f00dec8a 4639ea0c f00e462a  
+I/DEBUG   ( 1914):     401160b4 3001efce 2500d00a 681be009 d1eb2b00  
+I/DEBUG   ( 1914):     401160c4 25034807 f7fb4478 e000ec78 60266825  
+I/DEBUG   ( 1914):     401160d4 bdf84628 0003b30c 0003b300 0003b2f8  
+I/DEBUG   ( 1914):     401160e4 0003b2d4 bf82f7ff 4a3a4b39 47f0e92d  
+I/DEBUG   ( 1914):     401160f4 447b460d 4607b08a 6833589e 930946b1  
+I/DEBUG   ( 1914):     40116104 f9fcf001 f8d04604 2d008000 4628d04a  
+I/DEBUG   ( 1914):     40116114 fe92f00f 4606280f f7ffd846 4287ffe3  
+I/DEBUG   ( 1914):     40116124 200fd106 f00d4629 2800e8da e032d03d  
+I/DEBUG   ( 1914):     40116134 44784829 ebbef7fb 44784828 42b8e015  
+I/DEBUG   ( 1914):     40116144 6a07d113 44784826 ec36f7fb 463b4a25  
+I/DEBUG   ( 1914):     40116154 a8012120 f013447a 2101fa8b f01aa801  
+I/DEBUG   ( 1914):     40116164 1c43fda3 d1044607 6800e015 d1e62800  
+I/DEBUG   ( 1914):     40116174 4638e023 46324629 e914f00d 3ffff1b0  
+I/DEBUG   ( 1914):     40116184 d1024682 29046821 4638d0f3 e964f00d  
+I/ServiceManager( 1910): service 'media.audio_policy' died
+I/ServiceManager( 1910): service 'media.audio_flinger' died
+I/ServiceManager( 1910): service 'media.player' died
+I/ServiceManager( 1910): service 'media.camera' died
+I/Netd    ( 2205): Netd 1.0 starting
+I/SurfaceFlinger( 2207): SurfaceFlinger is starting
+I/SurfaceFlinger( 2207): SurfaceFlinger's main thread ready to run. Initializing graphics H/W...
+D/libEGL  ( 2207): loaded /system/lib/egl/libEGL_mali.so
+D/libEGL  ( 2207): loaded /system/lib/egl/libGLESv1_CM_mali.so
+D/libEGL  ( 2207): loaded /system/lib/egl/libGLESv2_mali.so
+E/        ( 2207): ERROR in Mali driver:
+E/        ( 2207):  * Device driver API mismatch
+E/        ( 2207):  * Device driver API version: 29
+E/        ( 2207):  * User space API version: 23
+E/        ( 2207): mali: REVISION=Linux-r3p2-01rel3 BUILD_DATE=Fri Mar 21 13:52:50 KST 2014 
+W/libEGL  ( 2207): eglInitialize(0x1) failed (EGL_BAD_ALLOC)
+I/gralloc ( 2207): using (fd=16)
+I/gralloc ( 2207): id           = s3cfb
+I/gralloc ( 2207): xres         = 720 px
+I/gralloc ( 2207): yres         = 1280 px
+I/gralloc ( 2207): xres_virtual = 720 px
+I/gralloc ( 2207): yres_virtual = 2560 px
+I/gralloc ( 2207): bpp          = 32
+I/gralloc ( 2207): r            = 16:8
+I/gralloc ( 2207): g            =  8:8
+I/gralloc ( 2207): b            =  0:8
+I/gralloc ( 2207): width        = 60 mm (304.799988 dpi)
+I/gralloc ( 2207): height       = 106 mm (306.716980 dpi)
+I/gralloc ( 2207): refresh rate = 60.51 Hz
+I/SurfaceFlinger( 2207): Using composer version 1.0
+W/SurfaceFlinger( 2207): getting VSYNC period from fb HAL: 16527286
+W/SurfaceFlinger( 2207): no suitable EGLConfig found, trying a simpler query
+F/SurfaceFlinger( 2207): no suitable EGLConfig found, giving up
+F/libc    ( 2207): Fatal signal 6 (SIGABRT) at 0x0000089f (code=-6), thread 2207 (surfaceflinger)
+W/SurfaceFlinger( 2207): Ignoring duplicate VSYNC event from HWC (t=0)
+I/mediaserver( 2209): ServiceManager: 0x41722448
+I/AudioFlinger( 2209): Using default 3000 mSec as standby time.
+E/MediaPlayerFactory( 2209): calling dlopen on FACTORY_LIB
+E/MediaPlayerFactory( 2209): Failed to open FACTORY_LIB Error : dlopen failed: library "libdashplayer.so" not found 
+I/CameraService( 2209): CameraService started (pid=2209)
+I/CameraService( 2209): Loaded "m0xx Camera Wrapper" camera module
+D/SecCameraHardware( 2209): LSIHAL int android::HAL_getNumberOfCameras()
+I/AudioPolicyManagerBase( 2209): loadAudioPolicyConfig() loaded /system/etc/audio_policy.conf
+V/audio_hw_primary( 2209): Reading configuration from /system/etc/sound/i9308
+E/audio_hw_primary( 2209): Failed to open /system/etc/sound/i9308
+E/AudioFlinger( 2209): int android::load_audio_interface(const char*, audio_hw_device_t**) couldn't open audio hw device in audio.primary (Invalid argument)
+I/AudioFlinger( 2209): loadHwModule() error -22 loading module primary 
+W/AudioPolicyManagerBase( 2209): could not open HW module primary
+I/audio_a2dp_hw( 2209): adev_open:  adev_open in A2dp_hw module
+I/AudioFlinger( 2209): loadHwModule() Loaded a2dp audio interface from A2DP Audio HW HAL (audio) handle 1
+I/AudioFlinger( 2209): loadHwModule() Loaded usb audio interface from USB audio HW HAL (audio) handle 2
+I/r_submix( 2209): adev_open(name=audio_hw_if)
+I/r_submix( 2209): adev_init_check()
+I/AudioFlinger( 2209): loadHwModule() Loaded r_submix audio interface from Wifi Display audio HAL (audio) handle 3
+E/AudioPolicyManagerBase( 2209): Not output found for attached devices 00000003
+E/AudioPolicyManagerBase( 2209): Failed to open primary output
+E/AudioPolicyManagerBase( 2209): getDeviceForStrategy() speaker device not found for STRATEGY_SONIFICATION
+E/AudioPolicyManagerBase( 2209): getDeviceForStrategy() speaker device not found for STRATEGY_SONIFICATION
+E/AudioPolicyService( 2209): couldn't init_check the audio policy (No such device)
+I/DEBUG   ( 1914): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+I/DEBUG   ( 1914): Build fingerprint: 'samsung/i9308xx/i9308:4.3/JSS15J/i9308XXUGMJ9:user/release-keys'
+I/DEBUG   ( 1914): Revision: '12'
+I/DEBUG   ( 1914): pid: 2207, tid: 2207, name: surfaceflinger  >>> /system/bin/surfaceflinger <<<
+I/DEBUG   ( 1914): signal 6 (SIGABRT), code -6 (SI_TKILL), fault addr --------
+I/DEBUG   ( 1914):     r0 00000000  r1 0000089f  r2 00000006  r3 00000000
+I/DEBUG   ( 1914):     r4 400d9f2c  r5 00000006  r6 00000002  r7 0000010c
+I/DEBUG   ( 1914):     r8 00000001  r9 40a11530  sl 00000001  fp be9b4a6c
+I/DEBUG   ( 1914):     ip 0000089f  sp be9b4518  lr 400fc0b7  pc 4010b05c  cpsr 000f0010
+I/DEBUG   ( 1914):     d0  6174697520676e69  d1  434c474520656c62
+I/DEBUG   ( 1914):     d2  6f66206769666e6f  d3  766967202c646e75
+I/DEBUG   ( 1914):     d4  3fe000000000953a  d5  4024000000000000
+I/DEBUG   ( 1914):     d6  0000000000000000  d7  4398666640000000
+I/DEBUG   ( 1914):     d8  0000000000000000  d9  0000000000000000
+I/DEBUG   ( 1914):     d10 0000000000000000  d11 0000000000000000
+I/DEBUG   ( 1914):     d12 0000000000000000  d13 0000000000000000
+I/DEBUG   ( 1914):     d14 0000000000000000  d15 0000000000000000
+I/DEBUG   ( 1914):     d16 404e40c4a0000000  d17 41cdcd6500000000
+I/DEBUG   ( 1914):     d18 416f85f6cd117aa9  d19 0000000000000000
+I/DEBUG   ( 1914):     d20 401833d080000000  d21 404e40c4a0000000
+I/DEBUG   ( 1914):     d22 0000000000000000  d23 0000000000000000
+I/DEBUG   ( 1914):     d24 0000000000000000  d25 0000000000000000
+I/DEBUG   ( 1914):     d26 404e40c4a0000000  d27 0000000000000000
+I/DEBUG   ( 1914):     d28 0000000000000000  d29 0000000000000000
+I/DEBUG   ( 1914):     d30 0000000000000000  d31 4000000000000000
+I/DEBUG   ( 1914):     scr 20000010
+I/DEBUG   ( 1914): 
+I/DEBUG   ( 1914): backtrace:
+I/DEBUG   ( 1914):     #00  pc 0002205c  /system/lib/libc.so (tgkill+12)
+I/DEBUG   ( 1914):     #01  pc 000130b3  /system/lib/libc.so (pthread_kill+50)
+I/DEBUG   ( 1914):     #02  pc 000132ab  /system/lib/libc.so (raise+10)
+I/DEBUG   ( 1914):     #03  pc 0001200b  /system/lib/libc.so
+I/DEBUG   ( 1914):     #04  pc 00021910  /system/lib/libc.so (abort+4)
+I/DEBUG   ( 1914):     #05  pc 00006aaf  /system/lib/libcutils.so (__android_log_assert+86)
+I/DEBUG   ( 1914):     #06  pc 0001d11f  /system/lib/libsurfaceflinger.so (android::SurfaceFlinger::init()+1294)
+I/DEBUG   ( 1914):     #07  pc 000008a7  /system/bin/surfaceflinger
+I/DEBUG   ( 1914):     #08  pc 0000e42b  /system/lib/libc.so (__libc_init+50)
+I/DEBUG   ( 1914):     #09  pc 000007dc  /system/bin/surfaceflinger
+I/DEBUG   ( 1914): 
+I/DEBUG   ( 1914): stack:
+I/DEBUG   ( 1914):          be9b44d8  00000000  
+I/DEBUG   ( 1914):          be9b44dc  00000000  
+I/DEBUG   ( 1914):          be9b44e0  00000000  
+I/DEBUG   ( 1914):          be9b44e4  00000000  
+I/DEBUG   ( 1914):          be9b44e8  00000000  
+I/DEBUG   ( 1914):          be9b44ec  000003ff  
+I/DEBUG   ( 1914):          be9b44f0  40252660  /system/lib/libsurfaceflinger.so
+I/DEBUG   ( 1914):          be9b44f4  be9b49e8  [stack]
+I/DEBUG   ( 1914):          be9b44f8  40a15368  [heap]
+I/DEBUG   ( 1914):          be9b44fc  00000001  
+I/DEBUG   ( 1914):          be9b4500  40a11530  [heap]
+I/DEBUG   ( 1914):          be9b4504  00000001  
+I/DEBUG   ( 1914):          be9b4508  400e3525  /system/lib/libcutils.so
+I/DEBUG   ( 1914):          be9b450c  40252660  /system/lib/libsurfaceflinger.so
+I/DEBUG   ( 1914):          be9b4510  be9b4584  [stack]
+I/DEBUG   ( 1914):          be9b4514  00000000  
+I/DEBUG   ( 1914):     #00  be9b4518  400d9f2c  /system/bin/linker
+I/DEBUG   ( 1914):          be9b451c  00000006  
+I/DEBUG   ( 1914):          be9b4520  00000002  
+I/DEBUG   ( 1914):          be9b4524  0000089f  
+I/DEBUG   ( 1914):          be9b4528  0000089f  
+I/DEBUG   ( 1914):          be9b452c  400fc0b7  /system/lib/libc.so (pthread_kill+54)
+I/DEBUG   ( 1914):     #01  be9b4530  400d9f24  /system/bin/linker
+I/DEBUG   ( 1914):          be9b4534  00000006  
+I/DEBUG   ( 1914):          be9b4538  00000000  
+I/DEBUG   ( 1914):          be9b453c  be9b49e8  [stack]
+I/DEBUG   ( 1914):          be9b4540  40a15368  [heap]
+I/DEBUG   ( 1914):          be9b4544  400fc2af  /system/lib/libc.so (raise+14)
+I/DEBUG   ( 1914):     #02  be9b4548  be9b4554  [stack]
+I/DEBUG   ( 1914):          be9b454c  400fb00f  /system/lib/libc.so
+I/DEBUG   ( 1914): 
+I/DEBUG   ( 1914): memory near r4:
+I/DEBUG   ( 1914):     400d9f0c 00000000 00000000 00000000 00000000  
+I/DEBUG   ( 1914):     400d9f1c be9b4a7c 00000000 400d9f24 400da154  
+I/DEBUG   ( 1914):     400d9f2c 00000002 402b1848 00000000 00000000  
+I/DEBUG   ( 1914):     400d9f3c 400da194 00000000 00000000 00000000  
+I/DEBUG   ( 1914):     400d9f4c 00000000 00000000 40a13af0 00000000  
+I/DEBUG   ( 1914):     400d9f5c 00000000 00000000 00000000 00000000  
+I/DEBUG   ( 1914):     400d9f6c 00000000 00000000 00000000 00000000  
+I/DEBUG   ( 1914):     400d9f7c 00000000 00000000 00000000 00000000  
+I/DEBUG   ( 1914):     400d9f8c 00000000 00000000 00000000 00000000  
+I/DEBUG   ( 1914):     400d9f9c 00000000 00000000 00000000 00000000  
+I/DEBUG   ( 1914):     400d9fac 00000000 00000000 00000000 00000000  
+I/DEBUG   ( 1914):     400d9fbc 00000000 00000000 00000000 00000000  
+I/DEBUG   ( 1914):     400d9fcc 00000000 00000000 00000000 00000000  
+I/DEBUG   ( 1914):     400d9fdc 00000000 00000000 00000000 00000000  
+I/DEBUG   ( 1914):     400d9fec 00000000 00000000 00000000 00000000  
+I/DEBUG   ( 1914):     400d9ffc 00000000 00000000 00000000 00000000  
+I/DEBUG   ( 1914): 
+I/DEBUG   ( 1914): memory near r9:
+I/DEBUG   ( 1914):     40a11510 bd282a68 00000004 00000000 00000000  
+I/DEBUG   ( 1914):     40a11520 00000000 00000000 00000000 00000000  
+I/DEBUG   ( 1914):     40a11530 00000000 00000001 00000000 00000000  
+I/DEBUG   ( 1914):     40a11540 00000000 402593f0 00000000 00000000  
+I/DEBUG   ( 1914):     40a11550 00000000 00000004 402581a8 00000000  
+I/DEBUG   ( 1914):     40a11560 00000000 00000000 00000040 ffffffff  
+I/DEBUG   ( 1914):     40a11570 00000000 be9b4a7c 00000001 40a12850  
+I/DEBUG   ( 1914):     40a11580 40137384 00000000 00000000 00000000  
+I/DEBUG   ( 1914):     40a11590 40a11450 40258fe4 00000087 40a0d030  
+I/DEBUG   ( 1914):     40a115a0 00000068 00000000 40258218 00000000  
+I/DEBUG   ( 1914):     40a115b0 00000000 00000000 0000000c 00000000  
+I/DEBUG   ( 1914):     40a115c0 00000000 00000000 00000000 00000000  
+I/DEBUG   ( 1914):     40a115d0 00000000 00000000 00000000 00000000  
+I/DEBUG   ( 1914):     40a115e0 00000000 00000000 00000000 00000000  
+I/DEBUG   ( 1914):     40a115f0 00000000 00000000 00000000 00000000  
+I/DEBUG   ( 1914):     40a11600 00000000 40a11450 40a12b68 00000000  
+I/DEBUG   ( 1914): 
+I/DEBUG   ( 1914): memory near fp:
+I/DEBUG   ( 1914):     be9b4a4c 00000000 00000000 4008f7e0 40090e6c  
+I/DEBUG   ( 1914):     be9b4a5c 40090e74 40090e7c be9b4a70 00000000  
+I/DEBUG   ( 1914):     be9b4a6c 400c987d 00000001 be9b4b6f 00000000  
+I/DEBUG   ( 1914):     be9b4a7c be9b4b8a be9b4bc7 be9b4bef be9b4c02  
+I/DEBUG   ( 1914):     be9b4a8c be9b4c17 be9b4c32 be9b4c45 be9b4c5e  
+I/DEBUG   ( 1914):     be9b4a9c be9b4c78 be9b4c91 be9b4eda be9b4f04  
+I/DEBUG   ( 1914):     be9b4aac be9b4f39 be9b4f65 be9b4f8f be9b4fa4  
+I/DEBUG   ( 1914):     be9b4abc be9b4fc2 00000000 00000010 0008b0d7  
+I/DEBUG   ( 1914):     be9b4acc 00000006 00001000 00000011 00000064  
+I/DEBUG   ( 1914):     be9b4adc 00000003 4008f034 00000004 00000020  
+I/DEBUG   ( 1914):     be9b4aec 00000005 00000008 00000007 400c8000  
+I/DEBUG   ( 1914):     be9b4afc 00000008 00000000 00000009 4008f77c  
+I/DEBUG   ( 1914):     be9b4b0c 0000000b 000003e8 0000000c 000003e8  
+I/DEBUG   ( 1914):     be9b4b1c 0000000d 000003eb 0000000e 000003eb  
+I/DEBUG   ( 1914):     be9b4b2c 00000017 00000000 00000019 be9b4b5b  
+I/DEBUG   ( 1914):     be9b4b3c 0000001f be9b4fe1 0000000f be9b4b6b  
+I/DEBUG   ( 1914): 
+I/DEBUG   ( 1914): memory near sp:
+I/DEBUG   ( 1914):     be9b44f8 40a15368 00000001 40a11530 00000001  
+I/DEBUG   ( 1914):     be9b4508 400e3525 40252660 be9b4584 00000000  
+I/DEBUG   ( 1914):     be9b4518 400d9f2c 00000006 00000002 0000089f  
+I/DEBUG   ( 1914):     be9b4528 0000089f 400fc0b7 400d9f24 00000006  
+I/DEBUG   ( 1914):     be9b4538 00000000 be9b49e8 40a15368 400fc2af  
+I/DEBUG   ( 1914):     be9b4548 be9b4554 400fb00f 401f053d ffffffdf  
+I/DEBUG   ( 1914):     be9b4558 400d4757 5d757fbe 400d4641 5d757fbe  
+I/DEBUG   ( 1914):     be9b4568 40252660 40252660 40252660 4010a914  
+I/DEBUG   ( 1914):     be9b4578 400e3525 400e3ab3 be9b4994 73206f6e  
+I/DEBUG   ( 1914):     be9b4588 61746975 20656c62 434c4745 69666e6f  
+I/DEBUG   ( 1914):     be9b4598 6f662067 2c646e75 76696720 20676e69  
+I/DEBUG   ( 1914):     be9b45a8 75007075 00797265 2e696c61 70006f73  
+I/DEBUG   ( 1914):     be9b45b8 73636968 572f4820 400d4641 400d46e6  
+I/DEBUG   ( 1914):     be9b45c8 be9b4684 401eb924 00003816 00000016  
+I/DEBUG   ( 1914):     be9b45d8 401f4000 00005ffc 401f4859 401f9ff8  
+I/DEBUG   ( 1914):     be9b45e8 401f4b5c 400c94d3 00000020 be9b4680  
+I/DEBUG   ( 1914): 
+I/DEBUG   ( 1914): code around pc:
+I/DEBUG   ( 1914):     4010b03c e8bd00f0 e3700a01 912fff1e e2600000  
+I/DEBUG   ( 1914):     4010b04c ea006e76 e92d50f0 e3a07f43 ef000000  
+I/DEBUG   ( 1914):     4010b05c e8bd50f0 e3700a01 912fff1e e2600000  
+I/DEBUG   ( 1914):     4010b06c ea006e6e e92d50f0 e3a070ee ef000000  
+I/DEBUG   ( 1914):     4010b07c e8bd50f0 e3700a01 912fff1e e2600000  
+I/DEBUG   ( 1914):     4010b08c ea006e66 f200429a bf0080cf f000f891  
+I/DEBUG   ( 1914):     4010b09c 4001e92d f040f891 d3532a10 0301ea80  
+I/DEBUG   ( 1914):     4010b0ac 0303f013 806ef000 d3262ae0 0300f1c0  
+I/DEBUG   ( 1914):     4010b0bc 030ff013 eba2d021 ea5f0203 bf447cc3  
+I/DEBUG   ( 1914):     4010b0cc eb01f811 eb01f800 f811bf21 f811cb01  
+I/DEBUG   ( 1914):     4010b0dc f800eb01 f800cb01 ea5feb01 da037c43  
+I/DEBUG   ( 1914):     4010b0ec 080df9a1 083df980 f921d303 f900070d  
+I/DEBUG   ( 1914):     4010b0fc f891071d f891f000 3a40f040 f891d30f  
+I/DEBUG   ( 1914):     4010b10c f891f080 f921f0c0 f921020d f891420d  
+I/DEBUG   ( 1914):     4010b11c 3a40f0c0 020df900 420df900 f102d2f3  
+I/DEBUG   ( 1914):     4010b12c 3a200240 f921d305 3a20020d 020df900  
+I/DEBUG   ( 1914): 
+I/DEBUG   ( 1914): code around lr:
+I/DEBUG   ( 1914):     400fc094 4b11ec12 e010447b d10e42bb 6a1f480f  
+I/DEBUG   ( 1914):     400fc0a4 f7fb4478 f00dec8a 4639ea0c f00e462a  
+I/DEBUG   ( 1914):     400fc0b4 3001efce 2500d00a 681be009 d1eb2b00  
+I/DEBUG   ( 1914):     400fc0c4 25034807 f7fb4478 e000ec78 60266825  
+I/DEBUG   ( 1914):     400fc0d4 bdf84628 0003b30c 0003b300 0003b2f8  
+I/DEBUG   ( 1914):     400fc0e4 0003b2d4 bf82f7ff 4a3a4b39 47f0e92d  
+I/DEBUG   ( 1914):     400fc0f4 447b460d 4607b08a 6833589e 930946b1  
+I/DEBUG   ( 1914):     400fc104 f9fcf001 f8d04604 2d008000 4628d04a  
+I/DEBUG   ( 1914):     400fc114 fe92f00f 4606280f f7ffd846 4287ffe3  
+I/DEBUG   ( 1914):     400fc124 200fd106 f00d4629 2800e8da e032d03d  
+I/DEBUG   ( 1914):     400fc134 44784829 ebbef7fb 44784828 42b8e015  
+I/DEBUG   ( 1914):     400fc144 6a07d113 44784826 ec36f7fb 463b4a25  
+I/DEBUG   ( 1914):     400fc154 a8012120 f013447a 2101fa8b f01aa801  
+I/DEBUG   ( 1914):     400fc164 1c43fda3 d1044607 6800e015 d1e62800  
+I/DEBUG   ( 1914):     400fc174 4638e023 46324629 e914f00d 3ffff1b0  
+I/DEBUG   ( 1914):     400fc184 d1024682 29046821 4638d0f3 e964f00d  
+I/ServiceManager( 1910): service 'media.audio_policy' died
+I/ServiceManager( 1910): service 'media.audio_flinger' died
+I/ServiceManager( 1910): service 'media.player' died
+I/ServiceManager( 1910): service 'media.camera' died
+I/Netd    ( 2246): Netd 1.0 starting
+I/SurfaceFlinger( 2248): SurfaceFlinger is starting
+I/SurfaceFlinger( 2248): SurfaceFlinger's main thread ready to run. Initializing graphics H/W...
+D/libEGL  ( 2248): loaded /system/lib/egl/libEGL_mali.so
+D/libEGL  ( 2248): loaded /system/lib/egl/libGLESv1_CM_mali.so
+D/libEGL  ( 2248): loaded /system/lib/egl/libGLESv2_mali.so
+E/        ( 2248): ERROR in Mali driver:
+E/        ( 2248):  * Device driver API mismatch
+E/        ( 2248):  * Device driver API version: 29
+E/        ( 2248):  * User space API version: 23
+E/        ( 2248): mali: REVISION=Linux-r3p2-01rel3 BUILD_DATE=Fri Mar 21 13:52:50 KST 2014 
+W/libEGL  ( 2248): eglInitialize(0x1) failed (EGL_BAD_ALLOC)
+I/gralloc ( 2248): using (fd=16)
+I/gralloc ( 2248): id           = s3cfb
+I/gralloc ( 2248): xres         = 720 px
+I/gralloc ( 2248): yres         = 1280 px
+I/gralloc ( 2248): xres_virtual = 720 px
+I/gralloc ( 2248): yres_virtual = 2560 px
+I/gralloc ( 2248): bpp          = 32
+I/gralloc ( 2248): r            = 16:8
+I/gralloc ( 2248): g            =  8:8
+I/gralloc ( 2248): b            =  0:8
+I/gralloc ( 2248): width        = 60 mm (304.799988 dpi)
+I/gralloc ( 2248): height       = 106 mm (306.716980 dpi)
+I/gralloc ( 2248): refresh rate = 60.51 Hz
+I/SurfaceFlinger( 2248): Using composer version 1.0
+W/SurfaceFlinger( 2248): getting VSYNC period from fb HAL: 16527286
+W/SurfaceFlinger( 2248): no suitable EGLConfig found, trying a simpler query
+F/SurfaceFlinger( 2248): no suitable EGLConfig found, giving up
+F/libc    ( 2248): Fatal signal 6 (SIGABRT) at 0x000008c8 (code=-6), thread 2248 (surfaceflinger)
+W/SurfaceFlinger( 2248): Ignoring duplicate VSYNC event from HWC (t=0)
+I/DEBUG   ( 1914): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+I/DEBUG   ( 1914): Build fingerprint: 'samsung/i9308xx/i9308:4.3/JSS15J/i9308XXUGMJ9:user/release-keys'
+I/DEBUG   ( 1914): Revision: '12'
+I/DEBUG   ( 1914): pid: 2248, tid: 2248, name: surfaceflinger  >>> /system/bin/surfaceflinger <<<
+I/DEBUG   ( 1914): signal 6 (SIGABRT), code -6 (SI_TKILL), fault addr --------
+I/DEBUG   ( 1914):     r0 00000000  r1 000008c8  r2 00000006  r3 00000000
+I/DEBUG   ( 1914):     r4 40179f2c  r5 00000006  r6 00000002  r7 0000010c
+I/DEBUG   ( 1914):     r8 00000001  r9 401090e8  sl 00000001  fp be801a6c
+I/DEBUG   ( 1914):     ip 000008c8  sp be801518  lr 4018e0b7  pc 4019d05c  cpsr 000f0010
+I/DEBUG   ( 1914):     d0  6174697520676e69  d1  434c474520656c62
+I/DEBUG   ( 1914):     d2  6f66206769666e6f  d3  766967202c646e75
+I/DEBUG   ( 1914):     d4  3fe000000000953a  d5  4024000000000000
+I/DEBUG   ( 1914):     d6  0000000000000000  d7  4398666640000000
+I/DEBUG   ( 1914):     d8  0000000000000000  d9  0000000000000000
+I/DEBUG   ( 1914):     d10 0000000000000000  d11 0000000000000000
+I/DEBUG   ( 1914):     d12 0000000000000000  d13 0000000000000000
+I/DEBUG   ( 1914):     d14 0000000000000000  d15 0000000000000000
+I/DEBUG   ( 1914):     d16 404e40c4a0000000  d17 41cdcd6500000000
+I/DEBUG   ( 1914):     d18 416f85f6cd117aa9  d19 0000000000000000
+I/DEBUG   ( 1914):     d20 401833d080000000  d21 404e40c4a0000000
+I/DEBUG   ( 1914):     d22 0000000000000000  d23 0000000000000000
+I/DEBUG   ( 1914):     d24 0000000000000000  d25 0000000000000000
+I/DEBUG   ( 1914):     d26 404e40c4a0000000  d27 0000000000000000
+I/DEBUG   ( 1914):     d28 0000000000000000  d29 0000000000000000
+I/DEBUG   ( 1914):     d30 0000000000000000  d31 4000000000000000
+I/DEBUG   ( 1914):     scr 20000010
+I/DEBUG   ( 1914): 
+I/DEBUG   ( 1914): backtrace:
+I/DEBUG   ( 1914):     #00  pc 0002205c  /system/lib/libc.so (tgkill+12)
+I/DEBUG   ( 1914):     #01  pc 000130b3  /system/lib/libc.so (pthread_kill+50)
+I/DEBUG   ( 1914):     #02  pc 000132ab  /system/lib/libc.so (raise+10)
+I/DEBUG   ( 1914):     #03  pc 0001200b  /system/lib/libc.so
+I/DEBUG   ( 1914):     #04  pc 00021910  /system/lib/libc.so (abort+4)
+I/DEBUG   ( 1914):     #05  pc 00006aaf  /system/lib/libcutils.so (__android_log_assert+86)
+I/DEBUG   ( 1914):     #06  pc 0001d11f  /system/lib/libsurfaceflinger.so (android::SurfaceFlinger::init()+1294)
+I/DEBUG   ( 1914):     #07  pc 000008a7  /system/bin/surfaceflinger
+I/DEBUG   ( 1914):     #08  pc 0000e42b  /system/lib/libc.so (__libc_init+50)
+I/DEBUG   ( 1914):     #09  pc 000007dc  /system/bin/surfaceflinger
+I/DEBUG   ( 1914): 
+I/DEBUG   ( 1914): stack:
+I/DEBUG   ( 1914):          be8014d8  00000000  
+I/DEBUG   ( 1914):          be8014dc  00000000  
+I/DEBUG   ( 1914):          be8014e0  00000000  
+I/DEBUG   ( 1914):          be8014e4  00000000  
+I/DEBUG   ( 1914):          be8014e8  00000000  
+I/DEBUG   ( 1914):          be8014ec  000003ff  
+I/DEBUG   ( 1914):          be8014f0  402aa660  /system/lib/libsurfaceflinger.so
+I/DEBUG   ( 1914):          be8014f4  be8019e8  [stack]
+I/DEBUG   ( 1914):          be8014f8  40345688  
+I/DEBUG   ( 1914):          be8014fc  00000001  
+I/DEBUG   ( 1914):          be801500  401090e8  
+I/DEBUG   ( 1914):          be801504  00000001  
+I/DEBUG   ( 1914):          be801508  40122525  /system/lib/libcutils.so
+I/DEBUG   ( 1914):          be80150c  402aa660  /system/lib/libsurfaceflinger.so
+I/DEBUG   ( 1914):          be801510  be801584  [stack]
+I/DEBUG   ( 1914):          be801514  00000000  
+I/DEBUG   ( 1914):     #00  be801518  40179f2c  /system/bin/linker
+I/DEBUG   ( 1914):          be80151c  00000006  
+I/DEBUG   ( 1914):          be801520  00000002  
+I/DEBUG   ( 1914):          be801524  000008c8  
+I/DEBUG   ( 1914):          be801528  000008c8  
+I/DEBUG   ( 1914):          be80152c  4018e0b7  /system/lib/libc.so (pthread_kill+54)
+I/DEBUG   ( 1914):     #01  be801530  40179f24  /system/bin/linker
+I/DEBUG   ( 1914):          be801534  00000006  
+I/DEBUG   ( 1914):          be801538  00000000  
+I/DEBUG   ( 1914):          be80153c  be8019e8  [stack]
+I/DEBUG   ( 1914):          be801540  40345688  
+I/DEBUG   ( 1914):          be801544  4018e2af  /system/lib/libc.so (raise+14)
+I/DEBUG   ( 1914):     #02  be801548  be801554  [stack]
+I/DEBUG   ( 1914):          be80154c  4018d00f  /system/lib/libc.so
+I/DEBUG   ( 1914): 
+I/DEBUG   ( 1914): memory near r4:
+I/DEBUG   ( 1914):     40179f0c 00000000 00000000 00000000 00000000  
+I/DEBUG   ( 1914):     40179f1c be801a7c 00000000 40179f24 4017a154  
+I/DEBUG   ( 1914):     40179f2c 00000002 40245848 00000000 00000000  
+I/DEBUG   ( 1914):     40179f3c 4017a194 00000000 00000000 00000000  
+I/DEBUG   ( 1914):     40179f4c 00000000 00000000 00000000 4010af40  
+I/DEBUG   ( 1914):     40179f5c 00000000 00000000 00000000 00000000  
+I/DEBUG   ( 1914):     40179f6c 00000000 00000000 00000000 00000000  
+I/DEBUG   ( 1914):     40179f7c 00000000 00000000 00000000 00000000  
+I/DEBUG   ( 1914):     40179f8c 00000000 00000000 00000000 00000000  
+I/DEBUG   ( 1914):     40179f9c 00000000 00000000 00000000 00000000  
+I/DEBUG   ( 1914):     40179fac 00000000 00000000 00000000 00000000  
+I/DEBUG   ( 1914):     40179fbc 00000000 00000000 00000000 00000000  
+I/DEBUG   ( 1914):     40179fcc 00000000 00000000 00000000 00000000  
+I/DEBUG   ( 1914):     40179fdc 00000000 00000000 00000000 00000000  
+I/DEBUG   ( 1914):     40179fec 00000000 00000000 00000000 00000000  
+I/DEBUG   ( 1914):     40179ffc 00000000 00000000 00000000 00000000  
+I/DEBUG   ( 1914): 
+I/DEBUG   ( 1914): memory near r9:
+I/DEBUG   ( 1914):     401090c8 fea3598f 00000005 00000000 00000000  
+I/DEBUG   ( 1914):     401090d8 00000000 00000000 00000000 00000000  
+I/DEBUG   ( 1914):     401090e8 00000000 00000001 00000000 00000000  
+I/DEBUG   ( 1914):     401090f8 00000000 402b13f0 00000000 00000000  
+I/DEBUG   ( 1914):     40109108 00000000 00000004 402b01a8 00000000  
+I/DEBUG   ( 1914):     40109118 00000000 00000000 00000040 ffffffff  
+I/DEBUG   ( 1914):     40109128 00000000 be801a7c 00000001 4010a408  
+I/DEBUG   ( 1914):     40109138 401c9384 00000000 00000000 00000000  
+I/DEBUG   ( 1914):     40109148 40109008 402b0fe4 00000087 403c4030  
+I/DEBUG   ( 1914):     40109158 0000008f 00000000 402b0218 00000000  
+I/DEBUG   ( 1914):     40109168 00000000 00000000 0000000c 00000000  
+I/DEBUG   ( 1914):     40109178 00000000 00000000 00000000 00000000  
+I/DEBUG   ( 1914):     40109188 00000000 00000000 00000000 00000000  
+I/DEBUG   ( 1914):     40109198 00000000 00000000 00000000 00000000  
+I/DEBUG   ( 1914):     401091a8 00000000 00000000 00000000 00000000  
+I/DEBUG   ( 1914):     401091b8 00000000 40109008 4010a428 00000000  
+I/DEBUG   ( 1914): 
+I/DEBUG   ( 1914): memory near fp:
+I/DEBUG   ( 1914):     be801a4c 00000000 00000000 4007a7e0 4007be6c  
+I/DEBUG   ( 1914):     be801a5c 4007be74 4007be7c be801a70 00000000  
+I/DEBUG   ( 1914):     be801a6c 4016987d 00000001 be801b6f 00000000  
+I/DEBUG   ( 1914):     be801a7c be801b8a be801bc7 be801bef be801c02  
+I/DEBUG   ( 1914):     be801a8c be801c17 be801c32 be801c45 be801c5e  
+I/DEBUG   ( 1914):     be801a9c be801c78 be801c91 be801eda be801f04  
+I/DEBUG   ( 1914):     be801aac be801f39 be801f65 be801f8f be801fa4  
+I/DEBUG   ( 1914):     be801abc be801fc2 00000000 00000010 0008b0d7  
+I/DEBUG   ( 1914):     be801acc 00000006 00001000 00000011 00000064  
+I/DEBUG   ( 1914):     be801adc 00000003 4007a034 00000004 00000020  
+I/DEBUG   ( 1914):     be801aec 00000005 00000008 00000007 40168000  
+I/DEBUG   ( 1914):     be801afc 00000008 00000000 00000009 4007a77c  
+I/DEBUG   ( 1914):     be801b0c 0000000b 000003e8 0000000c 000003e8  
+I/DEBUG   ( 1914):     be801b1c 0000000d 000003eb 0000000e 000003eb  
+I/DEBUG   ( 1914):     be801b2c 00000017 00000000 00000019 be801b5b  
+I/DEBUG   ( 1914):     be801b3c 0000001f be801fe1 0000000f be801b6b  
+I/DEBUG   ( 1914): 
+I/DEBUG   ( 1914): memory near sp:
+I/DEBUG   ( 1914):     be8014f8 40345688 00000001 401090e8 00000001  
+I/DEBUG   ( 1914):     be801508 40122525 402aa660 be801584 00000000  
+I/DEBUG   ( 1914):     be801518 40179f2c 00000006 00000002 000008c8  
+I/DEBUG   ( 1914):     be801528 000008c8 4018e0b7 40179f24 00000006  
+I/DEBUG   ( 1914):     be801538 00000000 be8019e8 40345688 4018e2af  
+I/DEBUG   ( 1914):     be801548 be801554 4018d00f 4011853d ffffffdf  
+I/DEBUG   ( 1914):     be801558 40174757 36284751 40174641 36284751  
+I/DEBUG   ( 1914):     be801568 402aa660 402aa660 402aa660 4019c914  
+I/DEBUG   ( 1914):     be801578 40122525 40122ab3 be801994 73206f6e  
+I/DEBUG   ( 1914):     be801588 61746975 20656c62 434c4745 69666e6f  
+I/DEBUG   ( 1914):     be801598 6f662067 2c646e75 76696720 20676e69  
+I/DEBUG   ( 1914):     be8015a8 75007075 00797265 2e696c61 70006f73  
+I/DEBUG   ( 1914):     be8015b8 73636968 572f4820 40174641 401746e6  
+I/DEBUG   ( 1914):     be8015c8 be801684 4000e924 00003816 00000016  
+I/DEBUG   ( 1914):     be8015d8 4009b000 00005ffc 4009b859 400a0ff8  
+I/DEBUG   ( 1914):     be8015e8 4009bb5c 401694d3 00000020 be801680  
+I/DEBUG   ( 1914): 
+I/DEBUG   ( 1914): code around pc:
+I/DEBUG   ( 1914):     4019d03c e8bd00f0 e3700a01 912fff1e e2600000  
+I/DEBUG   ( 1914):     4019d04c ea006e76 e92d50f0 e3a07f43 ef000000  
+I/DEBUG   ( 1914):     4019d05c e8bd50f0 e3700a01 912fff1e e2600000  
+I/DEBUG   ( 1914):     4019d06c ea006e6e e92d50f0 e3a070ee ef000000  
+I/DEBUG   ( 1914):     4019d07c e8bd50f0 e3700a01 912fff1e e2600000  
+I/DEBUG   ( 1914):     4019d08c ea006e66 f200429a bf0080cf f000f891  
+I/DEBUG   ( 1914):     4019d09c 4001e92d f040f891 d3532a10 0301ea80  
+I/DEBUG   ( 1914):     4019d0ac 0303f013 806ef000 d3262ae0 0300f1c0  
+I/DEBUG   ( 1914):     4019d0bc 030ff013 eba2d021 ea5f0203 bf447cc3  
+I/DEBUG   ( 1914):     4019d0cc eb01f811 eb01f800 f811bf21 f811cb01  
+I/DEBUG   ( 1914):     4019d0dc f800eb01 f800cb01 ea5feb01 da037c43  
+I/DEBUG   ( 1914):     4019d0ec 080df9a1 083df980 f921d303 f900070d  
+I/DEBUG   ( 1914):     4019d0fc f891071d f891f000 3a40f040 f891d30f  
+I/DEBUG   ( 1914):     4019d10c f891f080 f921f0c0 f921020d f891420d  
+I/DEBUG   ( 1914):     4019d11c 3a40f0c0 020df900 420df900 f102d2f3  
+I/DEBUG   ( 1914):     4019d12c 3a200240 f921d305 3a20020d 020df900  
+I/DEBUG   ( 1914): 
+I/DEBUG   ( 1914): code around lr:
+I/DEBUG   ( 1914):     4018e094 4b11ec12 e010447b d10e42bb 6a1f480f  
+I/DEBUG   ( 1914):     4018e0a4 f7fb4478 f00dec8a 4639ea0c f00e462a  
+I/DEBUG   ( 1914):     4018e0b4 3001efce 2500d00a 681be009 d1eb2b00  
+I/DEBUG   ( 1914):     4018e0c4 25034807 f7fb4478 e000ec78 60266825  
+I/DEBUG   ( 1914):     4018e0d4 bdf84628 0003b30c 0003b300 0003b2f8  
+I/DEBUG   ( 1914):     4018e0e4 0003b2d4 bf82f7ff 4a3a4b39 47f0e92d  
+I/DEBUG   ( 1914):     4018e0f4 447b460d 4607b08a 6833589e 930946b1  
+I/DEBUG   ( 1914):     4018e104 f9fcf001 f8d04604 2d008000 4628d04a  
+I/DEBUG   ( 1914):     4018e114 fe92f00f 4606280f f7ffd846 4287ffe3  
+I/DEBUG   ( 1914):     4018e124 200fd106 f00d4629 2800e8da e032d03d  
+I/DEBUG   ( 1914):     4018e134 44784829 ebbef7fb 44784828 42b8e015  
+I/DEBUG   ( 1914):     4018e144 6a07d113 44784826 ec36f7fb 463b4a25  
+I/DEBUG   ( 1914):     4018e154 a8012120 f013447a 2101fa8b f01aa801  
+I/DEBUG   ( 1914):     4018e164 1c43fda3 d1044607 6800e015 d1e62800  
+I/DEBUG   ( 1914):     4018e174 4638e023 46324629 e914f00d 3ffff1b0  
+I/DEBUG   ( 1914):     4018e184 d1024682 29046821 4638d0f3 e964f00d  
+I/mediaserver( 2250): ServiceManager: 0x4150e448
+I/AudioFlinger( 2250): Using default 3000 mSec as standby time.
+E/MediaPlayerFactory( 2250): calling dlopen on FACTORY_LIB
+E/MediaPlayerFactory( 2250): Failed to open FACTORY_LIB Error : dlopen failed: library "libdashplayer.so" not found 
+I/CameraService( 2250): CameraService started (pid=2250)
+I/CameraService( 2250): Loaded "m0xx Camera Wrapper" camera module
+D/SecCameraHardware( 2250): LSIHAL int android::HAL_getNumberOfCameras()
+I/AudioPolicyManagerBase( 2250): loadAudioPolicyConfig() loaded /system/etc/audio_policy.conf
+V/audio_hw_primary( 2250): Reading configuration from /system/etc/sound/i9308
+E/audio_hw_primary( 2250): Failed to open /system/etc/sound/i9308
+E/AudioFlinger( 2250): int android::load_audio_interface(const char*, audio_hw_device_t**) couldn't open audio hw device in audio.primary (Invalid argument)
+I/AudioFlinger( 2250): loadHwModule() error -22 loading module primary 
+W/AudioPolicyManagerBase( 2250): could not open HW module primary
+I/audio_a2dp_hw( 2250): adev_open:  adev_open in A2dp_hw module
+I/AudioFlinger( 2250): loadHwModule() Loaded a2dp audio interface from A2DP Audio HW HAL (audio) handle 1
+I/AudioFlinger( 2250): loadHwModule() Loaded usb audio interface from USB audio HW HAL (audio) handle 2
+I/r_submix( 2250): adev_open(name=audio_hw_if)
+I/r_submix( 2250): adev_init_check()
+I/AudioFlinger( 2250): loadHwModule() Loaded r_submix audio interface from Wifi Display audio HAL (audio) handle 3
+E/AudioPolicyManagerBase( 2250): Not output found for attached devices 00000003
+E/AudioPolicyManagerBase( 2250): Failed to open primary output
+E/AudioPolicyManagerBase( 2250): getDeviceForStrategy() speaker device not found for STRATEGY_SONIFICATION
+E/AudioPolicyManagerBase( 2250): getDeviceForStrategy() speaker device not found for STRATEGY_SONIFICATION
+E/AudioPolicyService( 2250): couldn't init_check the audio policy (No such device)
+I/ServiceManager( 1910): service 'media.audio_policy' died
+I/ServiceManager( 1910): service 'media.audio_flinger' died
+I/ServiceManager( 1910): service 'media.player' died
+I/ServiceManager( 1910): service 'media.camera' died
+I/Netd    ( 2285): Netd 1.0 starting
+I/SurfaceFlinger( 2287): SurfaceFlinger is starting
+I/SurfaceFlinger( 2287): SurfaceFlinger's main thread ready to run. Initializing graphics H/W...
+D/libEGL  ( 2287): loaded /system/lib/egl/libEGL_mali.so
+D/libEGL  ( 2287): loaded /system/lib/egl/libGLESv1_CM_mali.so
+D/libEGL  ( 2287): loaded /system/lib/egl/libGLESv2_mali.so
+E/        ( 2287): ERROR in Mali driver:
+E/        ( 2287):  * Device driver API mismatch
+E/        ( 2287):  * Device driver API version: 29
+E/        ( 2287):  * User space API version: 23
+E/        ( 2287): mali: REVISION=Linux-r3p2-01rel3 BUILD_DATE=Fri Mar 21 13:52:50 KST 2014 
+W/libEGL  ( 2287): eglInitialize(0x1) failed (EGL_BAD_ALLOC)
+I/gralloc ( 2287): using (fd=16)
+I/gralloc ( 2287): id           = s3cfb
+I/gralloc ( 2287): xres         = 720 px
+I/gralloc ( 2287): yres         = 1280 px
+I/gralloc ( 2287): xres_virtual = 720 px
+I/gralloc ( 2287): yres_virtual = 2560 px
+I/gralloc ( 2287): bpp          = 32
+I/gralloc ( 2287): r            = 16:8
+I/gralloc ( 2287): g            =  8:8
+I/gralloc ( 2287): b            =  0:8
+I/gralloc ( 2287): width        = 60 mm (304.799988 dpi)
+I/gralloc ( 2287): height       = 106 mm (306.716980 dpi)
+I/gralloc ( 2287): refresh rate = 60.51 Hz
+I/SurfaceFlinger( 2287): Using composer version 1.0
+W/SurfaceFlinger( 2287): getting VSYNC period from fb HAL: 16527286
+W/SurfaceFlinger( 2287): no suitable EGLConfig found, trying a simpler query
+F/SurfaceFlinger( 2287): no suitable EGLConfig found, giving up
+F/libc    ( 2287): Fatal signal 6 (SIGABRT) at 0x000008ef (code=-6), thread 2287 (surfaceflinger)
+W/SurfaceFlinger( 2287): Ignoring duplicate VSYNC event from HWC (t=0)
+I/mediaserver( 2289): ServiceManager: 0x40acf1b0
+I/AudioFlinger( 2289): Using default 3000 mSec as standby time.
+E/MediaPlayerFactory( 2289): calling dlopen on FACTORY_LIB
+E/MediaPlayerFactory( 2289): Failed to open FACTORY_LIB Error : dlopen failed: library "libdashplayer.so" not found 
+I/CameraService( 2289): CameraService started (pid=2289)
+I/CameraService( 2289): Loaded "m0xx Camera Wrapper" camera module
+D/SecCameraHardware( 2289): LSIHAL int android::HAL_getNumberOfCameras()
+I/AudioPolicyManagerBase( 2289): loadAudioPolicyConfig() loaded /system/etc/audio_policy.conf
+V/audio_hw_primary( 2289): Reading configuration from /system/etc/sound/i9308
+E/audio_hw_primary( 2289): Failed to open /system/etc/sound/i9308
+E/AudioFlinger( 2289): int android::load_audio_interface(const char*, audio_hw_device_t**) couldn't open audio hw device in audio.primary (Invalid argument)
+I/AudioFlinger( 2289): loadHwModule() error -22 loading module primary 
+W/AudioPolicyManagerBase( 2289): could not open HW module primary
+I/audio_a2dp_hw( 2289): adev_open:  adev_open in A2dp_hw module
+I/AudioFlinger( 2289): loadHwModule() Loaded a2dp audio interface from A2DP Audio HW HAL (audio) handle 1
+I/AudioFlinger( 2289): loadHwModule() Loaded usb audio interface from USB audio HW HAL (audio) handle 2
+I/r_submix( 2289): adev_open(name=audio_hw_if)
+I/r_submix( 2289): adev_init_check()
+I/AudioFlinger( 2289): loadHwModule() Loaded r_submix audio interface from Wifi Display audio HAL (audio) handle 3
+E/AudioPolicyManagerBase( 2289): Not output found for attached devices 00000003
+E/AudioPolicyManagerBase( 2289): Failed to open primary output
+E/AudioPolicyManagerBase( 2289): getDeviceForStrategy() speaker device not found for STRATEGY_SONIFICATION
+E/AudioPolicyManagerBase( 2289): getDeviceForStrategy() speaker device not found for STRATEGY_SONIFICATION
+E/AudioPolicyService( 2289): couldn't init_check the audio policy (No such device)
+I/DEBUG   ( 1914): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+I/DEBUG   ( 1914): Build fingerprint: 'samsung/i9308xx/i9308:4.3/JSS15J/i9308XXUGMJ9:user/release-keys'
+I/DEBUG   ( 1914): Revision: '12'
+I/DEBUG   ( 1914): pid: 2287, tid: 2287, name: surfaceflinger  >>> /system/bin/surfaceflinger <<<
+I/DEBUG   ( 1914): signal 6 (SIGABRT), code -6 (SI_TKILL), fault addr --------
+I/DEBUG   ( 1914):     r0 00000000  r1 000008ef  r2 00000006  r3 00000000
+I/DEBUG   ( 1914):     r4 401ccf2c  r5 00000006  r6 00000002  r7 0000010c
+I/DEBUG   ( 1914):     r8 00000001  r9 414f4530  sl 00000001  fp bedb9a6c
+I/DEBUG   ( 1914):     ip 000008ef  sp bedb9518  lr 4014c0b7  pc 4015b05c  cpsr 000f0010
+I/DEBUG   ( 1914):     d0  6174697520676e69  d1  434c474520656c62
+I/DEBUG   ( 1914):     d2  6f66206769666e6f  d3  766967202c646e75
+I/DEBUG   ( 1914):     d4  3fe000000000953a  d5  4024000000000000
+I/DEBUG   ( 1914):     d6  0000000000000000  d7  4398666640000000
+I/DEBUG   ( 1914):     d8  0000000000000000  d9  0000000000000000
+I/DEBUG   ( 1914):     d10 0000000000000000  d11 0000000000000000
+I/DEBUG   ( 1914):     d12 0000000000000000  d13 0000000000000000
+I/DEBUG   ( 1914):     d14 0000000000000000  d15 0000000000000000
+I/DEBUG   ( 1914):     d16 404e40c4a0000000  d17 41cdcd6500000000
+I/DEBUG   ( 1914):     d18 416f85f6cd117aa9  d19 0000000000000000
+I/DEBUG   ( 1914):     d20 401833d080000000  d21 404e40c4a0000000
+I/DEBUG   ( 1914):     d22 0000000000000000  d23 0000000000000000
+I/DEBUG   ( 1914):     d24 0000000000000000  d25 0000000000000000
+I/DEBUG   ( 1914):     d26 404e40c4a0000000  d27 0000000000000000
+I/DEBUG   ( 1914):     d28 0000000000000000  d29 0000000000000000
+I/DEBUG   ( 1914):     d30 0000000000000000  d31 4000000000000000
+I/DEBUG   ( 1914):     scr 20000010
+I/DEBUG   ( 1914): 
+I/DEBUG   ( 1914): backtrace:
+I/DEBUG   ( 1914):     #00  pc 0002205c  /system/lib/libc.so (tgkill+12)
+I/DEBUG   ( 1914):     #01  pc 000130b3  /system/lib/libc.so (pthread_kill+50)
+I/DEBUG   ( 1914):     #02  pc 000132ab  /system/lib/libc.so (raise+10)
+I/DEBUG   ( 1914):     #03  pc 0001200b  /system/lib/libc.so
+I/DEBUG   ( 1914):     #04  pc 00021910  /system/lib/libc.so (abort+4)
+I/DEBUG   ( 1914):     #05  pc 00006aaf  /system/lib/libcutils.so (__android_log_assert+86)
+I/DEBUG   ( 1914):     #06  pc 0001d11f  /system/lib/libsurfaceflinger.so (android::SurfaceFlinger::init()+1294)
+I/DEBUG   ( 1914):     #07  pc 000008a7  /system/bin/surfaceflinger
+I/DEBUG   ( 1914):     #08  pc 0000e42b  /system/lib/libc.so (__libc_init+50)
+I/DEBUG   ( 1914):     #09  pc 000007dc  /system/bin/surfaceflinger
+I/DEBUG   ( 1914): 
+I/DEBUG   ( 1914): stack:
+I/DEBUG   ( 1914):          bedb94d8  00000000  
+I/DEBUG   ( 1914):          bedb94dc  00000000  
+I/DEBUG   ( 1914):          bedb94e0  00000000  
+I/DEBUG   ( 1914):          bedb94e4  00000000  
+I/DEBUG   ( 1914):          bedb94e8  00000000  
+I/DEBUG   ( 1914):          bedb94ec  000003ff  
+I/DEBUG   ( 1914):          bedb94f0  40219660  /system/lib/libsurfaceflinger.so
+I/DEBUG   ( 1914):          bedb94f4  bedb99e8  [stack]
+I/DEBUG   ( 1914):          bedb94f8  414f8608  [heap]
+I/DEBUG   ( 1914):          bedb94fc  00000001  
+I/DEBUG   ( 1914):          bedb9500  414f4530  [heap]
+I/DEBUG   ( 1914):          bedb9504  00000001  
+I/DEBUG   ( 1914):          bedb9508  40116525  /system/lib/libcutils.so
+I/DEBUG   ( 1914):          bedb950c  40219660  /system/lib/libsurfaceflinger.so
+I/DEBUG   ( 1914):          bedb9510  bedb9584  [stack]
+I/DEBUG   ( 1914):          bedb9514  00000000  
+I/DEBUG   ( 1914):     #00  bedb9518  401ccf2c  /system/bin/linker
+I/DEBUG   ( 1914):          bedb951c  00000006  
+I/DEBUG   ( 1914):          bedb9520  00000002  
+I/DEBUG   ( 1914):          bedb9524  000008ef  
+I/DEBUG   ( 1914):          bedb9528  000008ef  
+I/DEBUG   ( 1914):          bedb952c  4014c0b7  /system/lib/libc.so (pthread_kill+54)
+I/DEBUG   ( 1914):     #01  bedb9530  401ccf24  /system/bin/linker
+I/DEBUG   ( 1914):          bedb9534  00000006  
+I/DEBUG   ( 1914):          bedb9538  00000000  
+I/DEBUG   ( 1914):          bedb953c  bedb99e8  [stack]
+I/DEBUG   ( 1914):          bedb9540  414f8608  [heap]
+I/DEBUG   ( 1914):          bedb9544  4014c2af  /system/lib/libc.so (raise+14)
+I/DEBUG   ( 1914):     #02  bedb9548  bedb9554  [stack]
+I/DEBUG   ( 1914):          bedb954c  4014b00f  /system/lib/libc.so
+I/DEBUG   ( 1914): 
+I/DEBUG   ( 1914): memory near r4:
+I/DEBUG   ( 1914):     401ccf0c 00000000 00000000 00000000 00000000  
+I/DEBUG   ( 1914):     401ccf1c bedb9a7c 00000000 401ccf24 401cd154  
+I/DEBUG   ( 1914):     401ccf2c 00000002 40278848 00000000 00000000  
+I/DEBUG   ( 1914):     401ccf3c 401cd194 00000000 00000000 00000000  
+I/DEBUG   ( 1914):     401ccf4c 00000000 00000000 00000000 414f7f10  
+I/DEBUG   ( 1914):     401ccf5c 00000000 00000000 00000000 00000000  
+I/DEBUG   ( 1914):     401ccf6c 00000000 00000000 00000000 00000000  
+I/DEBUG   ( 1914):     401ccf7c 00000000 00000000 00000000 00000000  
+I/DEBUG   ( 1914):     401ccf8c 00000000 00000000 00000000 00000000  
+I/DEBUG   ( 1914):     401ccf9c 00000000 00000000 00000000 00000000  
+I/DEBUG   ( 1914):     401ccfac 00000000 00000000 00000000 00000000  
+I/DEBUG   ( 1914):     401ccfbc 00000000 00000000 00000000 00000000  
+I/DEBUG   ( 1914):     401ccfcc 00000000 00000000 00000000 00000000  
+I/DEBUG   ( 1914):     401ccfdc 00000000 00000000 00000000 00000000  
+I/DEBUG   ( 1914):     401ccfec 00000000 00000000 00000000 00000000  
+I/DEBUG   ( 1914):     401ccffc 00000000 00000000 00000000 00000000  
+I/DEBUG   ( 1914): 
+I/DEBUG   ( 1914): memory near r9:
+I/DEBUG   ( 1914):     414f4510 06a4851f 00000007 00000000 00000000  
+I/DEBUG   ( 1914):     414f4520 00000000 00000000 00000000 00000000  
+I/DEBUG   ( 1914):     414f4530 00000000 00000001 00000000 00000000  
+I/DEBUG   ( 1914):     414f4540 00000000 402203f0 00000000 00000000  
+I/DEBUG   ( 1914):     414f4550 00000000 00000004 4021f1a8 00000000  
+I/DEBUG   ( 1914):     414f4560 00000000 00000000 00000040 ffffffff  
+I/DEBUG   ( 1914):     414f4570 00000000 bedb9a7c 00000001 414f5850  
+I/DEBUG   ( 1914):     414f4580 40187384 00000000 00000000 00000000  
+I/DEBUG   ( 1914):     414f4590 414f4450 4021ffe4 00000087 414f0030  
+I/DEBUG   ( 1914):     414f45a0 0000001f 00000000 4021f218 00000000  
+I/DEBUG   ( 1914):     414f45b0 00000000 00000000 0000000c 00000000  
+I/DEBUG   ( 1914):     414f45c0 00000000 00000000 00000000 00000000  
+I/DEBUG   ( 1914):     414f45d0 00000000 00000000 00000000 00000000  
+I/DEBUG   ( 1914):     414f45e0 00000000 00000000 00000000 00000000  
+I/DEBUG   ( 1914):     414f45f0 00000000 00000000 00000000 00000000  
+I/DEBUG   ( 1914):     414f4600 00000000 414f4450 414f5b68 00000000  
+I/DEBUG   ( 1914): 
+I/DEBUG   ( 1914): memory near fp:
+I/DEBUG   ( 1914):     bedb9a4c 00000000 00000000 400f37e0 400f4e6c  
+I/DEBUG   ( 1914):     bedb9a5c 400f4e74 400f4e7c bedb9a70 00000000  
+I/DEBUG   ( 1914):     bedb9a6c 401bc87d 00000001 bedb9b6f 00000000  
+I/DEBUG   ( 1914):     bedb9a7c bedb9b8a bedb9bc7 bedb9bef bedb9c02  
+I/DEBUG   ( 1914):     bedb9a8c bedb9c17 bedb9c32 bedb9c45 bedb9c5e  
+I/DEBUG   ( 1914):     bedb9a9c bedb9c78 bedb9c91 bedb9eda bedb9f04  
+I/DEBUG   ( 1914):     bedb9aac bedb9f39 bedb9f65 bedb9f8f bedb9fa4  
+I/DEBUG   ( 1914):     bedb9abc bedb9fc2 00000000 00000010 0008b0d7  
+I/DEBUG   ( 1914):     bedb9acc 00000006 00001000 00000011 00000064  
+I/DEBUG   ( 1914):     bedb9adc 00000003 400f3034 00000004 00000020  
+I/DEBUG   ( 1914):     bedb9aec 00000005 00000008 00000007 401bb000  
+I/DEBUG   ( 1914):     bedb9afc 00000008 00000000 00000009 400f377c  
+I/DEBUG   ( 1914):     bedb9b0c 0000000b 000003e8 0000000c 000003e8  
+I/DEBUG   ( 1914):     bedb9b1c 0000000d 000003eb 0000000e 000003eb  
+I/DEBUG   ( 1914):     bedb9b2c 00000017 00000000 00000019 bedb9b5b  
+I/DEBUG   ( 1914):     bedb9b3c 0000001f bedb9fe1 0000000f bedb9b6b  
+I/DEBUG   ( 1914): 
+I/DEBUG   ( 1914): memory near sp:
+I/DEBUG   ( 1914):     bedb94f8 414f8608 00000001 414f4530 00000001  
+I/DEBUG   ( 1914):     bedb9508 40116525 40219660 bedb9584 00000000  
+I/DEBUG   ( 1914):     bedb9518 401ccf2c 00000006 00000002 000008ef  
+I/DEBUG   ( 1914):     bedb9528 000008ef 4014c0b7 401ccf24 00000006  
+I/DEBUG   ( 1914):     bedb9538 00000000 bedb99e8 414f8608 4014c2af  
+I/DEBUG   ( 1914):     bedb9548 bedb9554 4014b00f 400b853d ffffffdf  
+I/DEBUG   ( 1914):     bedb9558 401c7757 93a46aa1 401c7641 93a46aa1  
+I/DEBUG   ( 1914):     bedb9568 40219660 40219660 40219660 4015a914  
+I/DEBUG   ( 1914):     bedb9578 40116525 40116ab3 bedb9994 73206f6e  
+I/DEBUG   ( 1914):     bedb9588 61746975 20656c62 434c4745 69666e6f  
+I/DEBUG   ( 1914):     bedb9598 6f662067 2c646e75 76696720 20676e69  
+I/DEBUG   ( 1914):     bedb95a8 75007075 00797265 2e696c61 70006f73  
+I/DEBUG   ( 1914):     bedb95b8 73636968 572f4820 401c7641 401c76e6  
+I/DEBUG   ( 1914):     bedb95c8 bedb9684 40096924 00003816 00000016  
+I/DEBUG   ( 1914):     bedb95d8 400f7000 00005ffc 400f7859 400fcff8  
+I/DEBUG   ( 1914):     bedb95e8 400f7b5c 401bc4d3 00000020 bedb9680  
+I/DEBUG   ( 1914): 
+I/DEBUG   ( 1914): code around pc:
+I/DEBUG   ( 1914):     4015b03c e8bd00f0 e3700a01 912fff1e e2600000  
+I/DEBUG   ( 1914):     4015b04c ea006e76 e92d50f0 e3a07f43 ef000000  
+I/DEBUG   ( 1914):     4015b05c e8bd50f0 e3700a01 912fff1e e2600000  
+I/DEBUG   ( 1914):     4015b06c ea006e6e e92d50f0 e3a070ee ef000000  
+I/DEBUG   ( 1914):     4015b07c e8bd50f0 e3700a01 912fff1e e2600000  
+I/DEBUG   ( 1914):     4015b08c ea006e66 f200429a bf0080cf f000f891  
+I/DEBUG   ( 1914):     4015b09c 4001e92d f040f891 d3532a10 0301ea80  
+I/DEBUG   ( 1914):     4015b0ac 0303f013 806ef000 d3262ae0 0300f1c0  
+I/DEBUG   ( 1914):     4015b0bc 030ff013 eba2d021 ea5f0203 bf447cc3  
+I/DEBUG   ( 1914):     4015b0cc eb01f811 eb01f800 f811bf21 f811cb01  
+I/DEBUG   ( 1914):     4015b0dc f800eb01 f800cb01 ea5feb01 da037c43  
+I/DEBUG   ( 1914):     4015b0ec 080df9a1 083df980 f921d303 f900070d  
+I/DEBUG   ( 1914):     4015b0fc f891071d f891f000 3a40f040 f891d30f  
+I/DEBUG   ( 1914):     4015b10c f891f080 f921f0c0 f921020d f891420d  
+I/DEBUG   ( 1914):     4015b11c 3a40f0c0 020df900 420df900 f102d2f3  
+I/DEBUG   ( 1914):     4015b12c 3a200240 f921d305 3a20020d 020df900  
+I/DEBUG   ( 1914): 
+I/DEBUG   ( 1914): code around lr:
+I/DEBUG   ( 1914):     4014c094 4b11ec12 e010447b d10e42bb 6a1f480f  
+I/DEBUG   ( 1914):     4014c0a4 f7fb4478 f00dec8a 4639ea0c f00e462a  
+I/DEBUG   ( 1914):     4014c0b4 3001efce 2500d00a 681be009 d1eb2b00  
+I/DEBUG   ( 1914):     4014c0c4 25034807 f7fb4478 e000ec78 60266825  
+I/DEBUG   ( 1914):     4014c0d4 bdf84628 0003b30c 0003b300 0003b2f8  
+I/DEBUG   ( 1914):     4014c0e4 0003b2d4 bf82f7ff 4a3a4b39 47f0e92d  
+I/DEBUG   ( 1914):     4014c0f4 447b460d 4607b08a 6833589e 930946b1  
+I/DEBUG   ( 1914):     4014c104 f9fcf001 f8d04604 2d008000 4628d04a  
+I/DEBUG   ( 1914):     4014c114 fe92f00f 4606280f f7ffd846 4287ffe3  
+I/DEBUG   ( 1914):     4014c124 200fd106 f00d4629 2800e8da e032d03d  
+I/DEBUG   ( 1914):     4014c134 44784829 ebbef7fb 44784828 42b8e015  
+I/DEBUG   ( 1914):     4014c144 6a07d113 44784826 ec36f7fb 463b4a25  
+I/DEBUG   ( 1914):     4014c154 a8012120 f013447a 2101fa8b f01aa801  
+I/DEBUG   ( 1914):     4014c164 1c43fda3 d1044607 6800e015 d1e62800  
+I/DEBUG   ( 1914):     4014c174 4638e023 46324629 e914f00d 3ffff1b0  
+I/DEBUG   ( 1914):     4014c184 d1024682 29046821 4638d0f3 e964f00d  
+I/ServiceManager( 1910): service 'media.audio_policy' died
+I/ServiceManager( 1910): service 'media.audio_flinger' died
+I/ServiceManager( 1910): service 'media.player' died
+I/ServiceManager( 1910): service 'media.camera' died
+I/Netd    ( 2326): Netd 1.0 starting
+I/SurfaceFlinger( 2328): SurfaceFlinger is starting
+I/SurfaceFlinger( 2328): SurfaceFlinger's main thread ready to run. Initializing graphics H/W...
+D/libEGL  ( 2328): loaded /system/lib/egl/libEGL_mali.so
+D/libEGL  ( 2328): loaded /system/lib/egl/libGLESv1_CM_mali.so
+D/libEGL  ( 2328): loaded /system/lib/egl/libGLESv2_mali.so
+E/        ( 2328): ERROR in Mali driver:
+E/        ( 2328):  * Device driver API mismatch
+E/        ( 2328):  * Device driver API version: 29
+E/        ( 2328):  * User space API version: 23
+E/        ( 2328): mali: REVISION=Linux-r3p2-01rel3 BUILD_DATE=Fri Mar 21 13:52:50 KST 2014 
+W/libEGL  ( 2328): eglInitialize(0x1) failed (EGL_BAD_ALLOC)
+I/gralloc ( 2328): using (fd=16)
+I/gralloc ( 2328): id           = s3cfb
+I/gralloc ( 2328): xres         = 720 px
+I/gralloc ( 2328): yres         = 1280 px
+I/gralloc ( 2328): xres_virtual = 720 px
+I/gralloc ( 2328): yres_virtual = 2560 px
+I/gralloc ( 2328): bpp          = 32
+I/gralloc ( 2328): r            = 16:8
+I/gralloc ( 2328): g            =  8:8
+I/gralloc ( 2328): b            =  0:8
+I/gralloc ( 2328): width        = 60 mm (304.799988 dpi)
+I/gralloc ( 2328): height       = 106 mm (306.716980 dpi)
+I/gralloc ( 2328): refresh rate = 60.51 Hz
+I/SurfaceFlinger( 2328): Using composer version 1.0
+W/SurfaceFlinger( 2328): getting VSYNC period from fb HAL: 16527286
+W/SurfaceFlinger( 2328): no suitable EGLConfig found, trying a simpler query
+F/SurfaceFlinger( 2328): no suitable EGLConfig found, giving up
+F/libc    ( 2328): Fatal signal 6 (SIGABRT) at 0x00000918 (code=-6), thread 2328 (surfaceflinger)
+W/SurfaceFlinger( 2328): Ignoring duplicate VSYNC event from HWC (t=0)
+I/DEBUG   ( 1914): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+I/DEBUG   ( 1914): Build fingerprint: 'samsung/i9308xx/i9308:4.3/JSS15J/i9308XXUGMJ9:user/release-keys'
+I/DEBUG   ( 1914): Revision: '12'
+I/DEBUG   ( 1914): pid: 2328, tid: 2328, name: surfaceflinger  >>> /system/bin/surfaceflinger <<<
+I/DEBUG   ( 1914): signal 6 (SIGABRT), code -6 (SI_TKILL), fault addr --------
+I/DEBUG   ( 1914):     r0 00000000  r1 00000918  r2 00000006  r3 00000000
+I/DEBUG   ( 1914):     r4 40107f2c  r5 00000006  r6 00000002  r7 0000010c
+I/DEBUG   ( 1914):     r8 00000001  r9 41cfd530  sl 00000001  fp be881a6c
+I/DEBUG   ( 1914):     ip 00000918  sp be881518  lr 401d50b7  pc 401e405c  cpsr 000f0010
+I/DEBUG   ( 1914):     d0  6174697520676e69  d1  434c474520656c62
+I/DEBUG   ( 1914):     d2  6f66206769666e6f  d3  766967202c646e75
+I/DEBUG   ( 1914):     d4  3fe000000000953a  d5  4024000000000000
+I/DEBUG   ( 1914):     d6  0000000000000000  d7  4398666640000000
+I/DEBUG   ( 1914):     d8  0000000000000000  d9  0000000000000000
+I/DEBUG   ( 1914):     d10 0000000000000000  d11 0000000000000000
+I/DEBUG   ( 1914):     d12 0000000000000000  d13 0000000000000000
+I/DEBUG   ( 1914):     d14 0000000000000000  d15 0000000000000000
+I/DEBUG   ( 1914):     d16 404e40c4a0000000  d17 41cdcd6500000000
+I/DEBUG   ( 1914):     d18 416f85f6cd117aa9  d19 0000000000000000
+I/DEBUG   ( 1914):     d20 401833d080000000  d21 404e40c4a0000000
+I/DEBUG   ( 1914):     d22 0000000000000000  d23 0000000000000000
+I/DEBUG   ( 1914):     d24 0000000000000000  d25 0000000000000000
+I/DEBUG   ( 1914):     d26 404e40c4a0000000  d27 0000000000000000
+I/DEBUG   ( 1914):     d28 0000000000000000  d29 0000000000000000
+I/DEBUG   ( 1914):     d30 0000000000000000  d31 4000000000000000
+I/DEBUG   ( 1914):     scr 20000010
+I/DEBUG   ( 1914): 
+I/DEBUG   ( 1914): backtrace:
+I/DEBUG   ( 1914):     #00  pc 0002205c  /system/lib/libc.so (tgkill+12)
+I/DEBUG   ( 1914):     #01  pc 000130b3  /system/lib/libc.so (pthread_kill+50)
+I/DEBUG   ( 1914):     #02  pc 000132ab  /system/lib/libc.so (raise+10)
+I/DEBUG   ( 1914):     #03  pc 0001200b  /system/lib/libc.so
+I/DEBUG   ( 1914):     #04  pc 00021910  /system/lib/libc.so (abort+4)
+I/DEBUG   ( 1914):     #05  pc 00006aaf  /system/lib/libcutils.so (__android_log_assert+86)
+I/DEBUG   ( 1914):     #06  pc 0001d11f  /system/lib/libsurfaceflinger.so (android::SurfaceFlinger::init()+1294)
+I/DEBUG   ( 1914):     #07  pc 000008a7  /system/bin/surfaceflinger
+I/DEBUG   ( 1914):     #08  pc 0000e42b  /system/lib/libc.so (__libc_init+50)
+I/DEBUG   ( 1914):     #09  pc 000007dc  /system/bin/surfaceflinger
+I/DEBUG   ( 1914): 
+I/DEBUG   ( 1914): stack:
+I/DEBUG   ( 1914):          be8814d8  00000000  
+I/DEBUG   ( 1914):          be8814dc  00000000  
+I/DEBUG   ( 1914):          be8814e0  00000000  
+I/DEBUG   ( 1914):          be8814e4  00000000  
+I/DEBUG   ( 1914):          be8814e8  00000000  
+I/DEBUG   ( 1914):          be8814ec  000003ff  
+I/DEBUG   ( 1914):          be8814f0  4030b660  /system/lib/libsurfaceflinger.so
+I/DEBUG   ( 1914):          be8814f4  be8819e8  [stack]
+I/DEBUG   ( 1914):          be8814f8  41d01618  [heap]
+I/DEBUG   ( 1914):          be8814fc  00000001  
+I/DEBUG   ( 1914):          be881500  41cfd530  [heap]
+I/DEBUG   ( 1914):          be881504  00000001  
+I/DEBUG   ( 1914):          be881508  400a2525  /system/lib/libcutils.so
+I/DEBUG   ( 1914):          be88150c  4030b660  /system/lib/libsurfaceflinger.so
+I/DEBUG   ( 1914):          be881510  be881584  [stack]
+I/DEBUG   ( 1914):          be881514  00000000  
+I/DEBUG   ( 1914):     #00  be881518  40107f2c  /system/bin/linker
+I/DEBUG   ( 1914):          be88151c  00000006  
+I/DEBUG   ( 1914):          be881520  00000002  
+I/DEBUG   ( 1914):          be881524  00000918  
+I/DEBUG   ( 1914):          be881528  00000918  
+I/DEBUG   ( 1914):          be88152c  401d50b7  /system/lib/libc.so (pthread_kill+54)
+I/DEBUG   ( 1914):     #01  be881530  40107f24  /system/bin/linker
+I/DEBUG   ( 1914):          be881534  00000006  
+I/DEBUG   ( 1914):          be881538  00000000  
+I/DEBUG   ( 1914):          be88153c  be8819e8  [stack]
+I/DEBUG   ( 1914):          be881540  41d01618  [heap]
+I/DEBUG   ( 1914):          be881544  401d52af  /system/lib/libc.so (raise+14)
+I/DEBUG   ( 1914):     #02  be881548  be881554  [stack]
+I/DEBUG   ( 1914):          be88154c  401d400f  /system/lib/libc.so
+I/DEBUG   ( 1914): 
+I/DEBUG   ( 1914): memory near r4:
+I/DEBUG   ( 1914):     40107f0c 00000000 00000000 00000000 00000000  
+I/DEBUG   ( 1914):     40107f1c be881a7c 00000000 40107f24 40108154  
+I/DEBUG   ( 1914):     40107f2c 00000002 401a0848 00000000 00000000  
+I/DEBUG   ( 1914):     40107f3c 40108194 00000000 00000000 00000000  
+I/DEBUG   ( 1914):     40107f4c 00000000 00000000 00000000 41d002c0  
+I/DEBUG   ( 1914):     40107f5c 00000000 00000000 00000000 00000000  
+I/DEBUG   ( 1914):     40107f6c 00000000 00000000 00000000 00000000  
+I/DEBUG   ( 1914):     40107f7c 00000000 00000000 00000000 00000000  
+I/DEBUG   ( 1914):     40107f8c 00000000 00000000 00000000 00000000  
+I/DEBUG   ( 1914):     40107f9c 00000000 00000000 00000000 00000000  
+I/DEBUG   ( 1914):     40107fac 00000000 00000000 00000000 00000000  
+I/DEBUG   ( 1914):     40107fbc 00000000 00000000 00000000 00000000  
+I/DEBUG   ( 1914):     40107fcc 00000000 00000000 00000000 00000000  
+I/DEBUG   ( 1914):     40107fdc 00000000 00000000 00000000 00000000  
+I/DEBUG   ( 1914):     40107fec 00000000 00000000 00000000 00000000  
+I/DEBUG   ( 1914):     40107ffc 00000000 00000000 00000000 00000000  
+I/DEBUG   ( 1914): 
+I/DEBUG   ( 1914): memory near r9:
+I/DEBUG   ( 1914):     41cfd510 4b39e49c 00000008 00000000 00000000  
+I/DEBUG   ( 1914):     41cfd520 00000000 00000000 00000000 00000000  
+I/DEBUG   ( 1914):     41cfd530 00000000 00000001 00000000 00000000  
+I/DEBUG   ( 1914):     41cfd540 00000000 403123f0 00000000 00000000  
+I/DEBUG   ( 1914):     41cfd550 00000000 00000004 403111a8 00000000  
+I/DEBUG   ( 1914):     41cfd560 00000000 00000000 00000040 ffffffff  
+I/DEBUG   ( 1914):     41cfd570 00000000 be881a7c 00000001 41cfe850  
+I/DEBUG   ( 1914):     41cfd580 40210384 00000000 00000000 00000000  
+I/DEBUG   ( 1914):     41cfd590 41cfd450 40311fe4 00000087 41cf9030  
+I/DEBUG   ( 1914):     41cfd5a0 0000009c 00000000 40311218 00000000  
+I/DEBUG   ( 1914):     41cfd5b0 00000000 00000000 0000000c 00000000  
+I/DEBUG   ( 1914):     41cfd5c0 00000000 00000000 00000000 00000000  
+I/DEBUG   ( 1914):     41cfd5d0 00000000 00000000 00000000 00000000  
+I/DEBUG   ( 1914):     41cfd5e0 00000000 00000000 00000000 00000000  
+I/DEBUG   ( 1914):     41cfd5f0 00000000 00000000 00000000 00000000  
+I/DEBUG   ( 1914):     41cfd600 00000000 41cfd450 41cfeb68 00000000  
+I/DEBUG   ( 1914): 
+I/DEBUG   ( 1914): memory near fp:
+I/DEBUG   ( 1914):     be881a4c 00000000 00000000 4000e7e0 4000fe6c  
+I/DEBUG   ( 1914):     be881a5c 4000fe74 4000fe7c be881a70 00000000  
+I/DEBUG   ( 1914):     be881a6c 400f787d 00000001 be881b6f 00000000  
+I/DEBUG   ( 1914):     be881a7c be881b8a be881bc7 be881bef be881c02  
+I/DEBUG   ( 1914):     be881a8c be881c17 be881c32 be881c45 be881c5e  
+I/DEBUG   ( 1914):     be881a9c be881c78 be881c91 be881eda be881f04  
+I/DEBUG   ( 1914):     be881aac be881f39 be881f65 be881f8f be881fa4  
+I/DEBUG   ( 1914):     be881abc be881fc2 00000000 00000010 0008b0d7  
+I/DEBUG   ( 1914):     be881acc 00000006 00001000 00000011 00000064  
+I/DEBUG   ( 1914):     be881adc 00000003 4000e034 00000004 00000020  
+I/DEBUG   ( 1914):     be881aec 00000005 00000008 00000007 400f6000  
+I/DEBUG   ( 1914):     be881afc 00000008 00000000 00000009 4000e77c  
+I/DEBUG   ( 1914):     be881b0c 0000000b 000003e8 0000000c 000003e8  
+I/DEBUG   ( 1914):     be881b1c 0000000d 000003eb 0000000e 000003eb  
+I/DEBUG   ( 1914):     be881b2c 00000017 00000000 00000019 be881b5b  
+I/DEBUG   ( 1914):     be881b3c 0000001f be881fe1 0000000f be881b6b  
+I/DEBUG   ( 1914): 
+I/DEBUG   ( 1914): memory near sp:
+I/DEBUG   ( 1914):     be8814f8 41d01618 00000001 41cfd530 00000001  
+I/DEBUG   ( 1914):     be881508 400a2525 4030b660 be881584 00000000  
+I/DEBUG   ( 1914):     be881518 40107f2c 00000006 00000002 00000918  
+I/DEBUG   ( 1914):     be881528 00000918 401d50b7 40107f24 00000006  
+I/DEBUG   ( 1914):     be881538 00000000 be8819e8 41d01618 401d52af  
+I/DEBUG   ( 1914):     be881548 be881554 401d400f 401a853d ffffffdf  
+I/DEBUG   ( 1914):     be881558 40102757 80d86b7f 40102641 80d86b7f  
+I/DEBUG   ( 1914):     be881568 4030b660 4030b660 4030b660 401e3914  
+I/DEBUG   ( 1914):     be881578 400a2525 400a2ab3 be881994 73206f6e  
+I/DEBUG   ( 1914):     be881588 61746975 20656c62 434c4745 69666e6f  
+I/DEBUG   ( 1914):     be881598 6f662067 2c646e75 76696720 20676e69  
+I/DEBUG   ( 1914):     be8815a8 75007075 00797265 2e696c61 70006f73  
+I/DEBUG   ( 1914):     be8815b8 73636968 572f4820 40102641 401026e6  
+I/DEBUG   ( 1914):     be8815c8 be881684 4006b924 00003816 00000016  
+I/DEBUG   ( 1914):     be8815d8 40080000 00005ffc 40080859 40085ff8  
+I/DEBUG   ( 1914):     be8815e8 40080b5c 400f74d3 00000020 be881680  
+I/DEBUG   ( 1914): 
+I/DEBUG   ( 1914): code around pc:
+I/DEBUG   ( 1914):     401e403c e8bd00f0 e3700a01 912fff1e e2600000  
+I/DEBUG   ( 1914):     401e404c ea006e76 e92d50f0 e3a07f43 ef000000  
+I/DEBUG   ( 1914):     401e405c e8bd50f0 e3700a01 912fff1e e2600000  
+I/DEBUG   ( 1914):     401e406c ea006e6e e92d50f0 e3a070ee ef000000  
+I/DEBUG   ( 1914):     401e407c e8bd50f0 e3700a01 912fff1e e2600000  
+I/DEBUG   ( 1914):     401e408c ea006e66 f200429a bf0080cf f000f891  
+I/DEBUG   ( 1914):     401e409c 4001e92d f040f891 d3532a10 0301ea80  
+I/DEBUG   ( 1914):     401e40ac 0303f013 806ef000 d3262ae0 0300f1c0  
+I/DEBUG   ( 1914):     401e40bc 030ff013 eba2d021 ea5f0203 bf447cc3  
+I/DEBUG   ( 1914):     401e40cc eb01f811 eb01f800 f811bf21 f811cb01  
+I/DEBUG   ( 1914):     401e40dc f800eb01 f800cb01 ea5feb01 da037c43  
+I/DEBUG   ( 1914):     401e40ec 080df9a1 083df980 f921d303 f900070d  
+I/DEBUG   ( 1914):     401e40fc f891071d f891f000 3a40f040 f891d30f  
+I/DEBUG   ( 1914):     401e410c f891f080 f921f0c0 f921020d f891420d  
+I/DEBUG   ( 1914):     401e411c 3a40f0c0 020df900 420df900 f102d2f3  
+I/DEBUG   ( 1914):     401e412c 3a200240 f921d305 3a20020d 020df900  
+I/DEBUG   ( 1914): 
+I/DEBUG   ( 1914): code around lr:
+I/DEBUG   ( 1914):     401d5094 4b11ec12 e010447b d10e42bb 6a1f480f  
+I/DEBUG   ( 1914):     401d50a4 f7fb4478 f00dec8a 4639ea0c f00e462a  
+I/DEBUG   ( 1914):     401d50b4 3001efce 2500d00a 681be009 d1eb2b00  
+I/DEBUG   ( 1914):     401d50c4 25034807 f7fb4478 e000ec78 60266825  
+I/DEBUG   ( 1914):     401d50d4 bdf84628 0003b30c 0003b300 0003b2f8  
+I/DEBUG   ( 1914):     401d50e4 0003b2d4 bf82f7ff 4a3a4b39 47f0e92d  
+I/DEBUG   ( 1914):     401d50f4 447b460d 4607b08a 6833589e 930946b1  
+I/DEBUG   ( 1914):     401d5104 f9fcf001 f8d04604 2d008000 4628d04a  
+I/DEBUG   ( 1914):     401d5114 fe92f00f 4606280f f7ffd846 4287ffe3  
+I/DEBUG   ( 1914):     401d5124 200fd106 f00d4629 2800e8da e032d03d  
+I/DEBUG   ( 1914):     401d5134 44784829 ebbef7fb 44784828 42b8e015  
+I/DEBUG   ( 1914):     401d5144 6a07d113 44784826 ec36f7fb 463b4a25  
+I/DEBUG   ( 1914):     401d5154 a8012120 f013447a 2101fa8b f01aa801  
+I/DEBUG   ( 1914):     401d5164 1c43fda3 d1044607 6800e015 d1e62800  
+I/DEBUG   ( 1914):     401d5174 4638e023 46324629 e914f00d 3ffff1b0  
+I/DEBUG   ( 1914):     401d5184 d1024682 29046821 4638d0f3 e964f00d  
+I/Netd    ( 2358): Netd 1.0 starting
+I/SurfaceFlinger( 2360): SurfaceFlinger is starting
+I/SurfaceFlinger( 2360): SurfaceFlinger's main thread ready to run. Initializing graphics H/W...
+D/libEGL  ( 2360): loaded /system/lib/egl/libEGL_mali.so
+D/libEGL  ( 2360): loaded /system/lib/egl/libGLESv1_CM_mali.so
+D/libEGL  ( 2360): loaded /system/lib/egl/libGLESv2_mali.so
+E/        ( 2360): ERROR in Mali driver:
+E/        ( 2360):  * Device driver API mismatch
+E/        ( 2360):  * Device driver API version: 29
+E/        ( 2360):  * User space API version: 23
+E/        ( 2360): mali: REVISION=Linux-r3p2-01rel3 BUILD_DATE=Fri Mar 21 13:52:50 KST 2014 
+W/libEGL  ( 2360): eglInitialize(0x1) failed (EGL_BAD_ALLOC)
+I/gralloc ( 2360): using (fd=16)
+I/gralloc ( 2360): id           = s3cfb
+I/gralloc ( 2360): xres         = 720 px
+I/gralloc ( 2360): yres         = 1280 px
+I/gralloc ( 2360): xres_virtual = 720 px
+I/gralloc ( 2360): yres_virtual = 2560 px
+I/gralloc ( 2360): bpp          = 32
+I/gralloc ( 2360): r            = 16:8
+I/gralloc ( 2360): g            =  8:8
+I/gralloc ( 2360): b            =  0:8
+I/gralloc ( 2360): width        = 60 mm (304.799988 dpi)
+I/gralloc ( 2360): height       = 106 mm (306.716980 dpi)
+I/gralloc ( 2360): refresh rate = 60.51 Hz
+I/SurfaceFlinger( 2360): Using composer version 1.0
+W/SurfaceFlinger( 2360): getting VSYNC period from fb HAL: 16527286
+W/SurfaceFlinger( 2360): no suitable EGLConfig found, trying a simpler query
+F/SurfaceFlinger( 2360): no suitable EGLConfig found, giving up
+F/libc    ( 2360): Fatal signal 6 (SIGABRT) at 0x00000938 (code=-6), thread 2360 (surfaceflinger)
+W/SurfaceFlinger( 2360): Ignoring duplicate VSYNC event from HWC (t=0)
+I/DEBUG   ( 1914): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+I/DEBUG   ( 1914): Build fingerprint: 'samsung/i9308xx/i9308:4.3/JSS15J/i9308XXUGMJ9:user/release-keys'
+I/DEBUG   ( 1914): Revision: '12'
+I/DEBUG   ( 1914): pid: 2360, tid: 2360, name: surfaceflinger  >>> /system/bin/surfaceflinger <<<
+I/DEBUG   ( 1914): signal 6 (SIGABRT), code -6 (SI_TKILL), fault addr --------
+I/DEBUG   ( 1914):     r0 00000000  r1 00000938  r2 00000006  r3 00000000
+I/DEBUG   ( 1914):     r4 4012bf2c  r5 00000006  r6 00000002  r7 0000010c
+I/DEBUG   ( 1914):     r8 00000001  r9 400df530  sl 00000001  fp be881a6c
+I/DEBUG   ( 1914):     ip 00000938  sp be881518  lr 401a60b7  pc 401b505c  cpsr 000f0010
+I/DEBUG   ( 1914):     d0  6174697520676e69  d1  434c474520656c62
+I/DEBUG   ( 1914):     d2  6f66206769666e6f  d3  766967202c646e75
+I/DEBUG   ( 1914):     d4  3fe000000000953a  d5  4024000000000000
+I/DEBUG   ( 1914):     d6  0000000000000000  d7  4398666640000000
+I/DEBUG   ( 1914):     d8  0000000000000000  d9  0000000000000000
+I/DEBUG   ( 1914):     d10 0000000000000000  d11 0000000000000000
+I/DEBUG   ( 1914):     d12 0000000000000000  d13 0000000000000000
+I/DEBUG   ( 1914):     d14 0000000000000000  d15 0000000000000000
+I/DEBUG   ( 1914):     d16 404e40c4a0000000  d17 41cdcd6500000000
+I/DEBUG   ( 1914):     d18 416f85f6cd117aa9  d19 0000000000000000
+I/DEBUG   ( 1914):     d20 401833d080000000  d21 404e40c4a0000000
+I/DEBUG   ( 1914):     d22 0000000000000000  d23 0000000000000000
+I/DEBUG   ( 1914):     d24 0000000000000000  d25 0000000000000000
+I/DEBUG   ( 1914):     d26 404e40c4a0000000  d27 0000000000000000
+I/DEBUG   ( 1914):     d28 0000000000000000  d29 0000000000000000
+I/DEBUG   ( 1914):     d30 0000000000000000  d31 4000000000000000
+I/DEBUG   ( 1914):     scr 20000010
+I/DEBUG   ( 1914): 
+I/DEBUG   ( 1914): backtrace:
+I/DEBUG   ( 1914):     #00  pc 0002205c  /system/lib/libc.so (tgkill+12)
+I/DEBUG   ( 1914):     #01  pc 000130b3  /system/lib/libc.so (pthread_kill+50)
+I/DEBUG   ( 1914):     #02  pc 000132ab  /system/lib/libc.so (raise+10)
+I/DEBUG   ( 1914):     #03  pc 0001200b  /system/lib/libc.so
+I/DEBUG   ( 1914):     #04  pc 00021910  /system/lib/libc.so (abort+4)
+I/DEBUG   ( 1914):     #05  pc 00006aaf  /system/lib/libcutils.so (__android_log_assert+86)
+I/DEBUG   ( 1914):     #06  pc 0001d11f  /system/lib/libsurfaceflinger.so (android::SurfaceFlinger::init()+1294)
+I/DEBUG   ( 1914):     #07  pc 000008a7  /system/bin/surfaceflinger
+I/DEBUG   ( 1914):     #08  pc 0000e42b  /system/lib/libc.so (__libc_init+50)
+I/DEBUG   ( 1914):     #09  pc 000007dc  /system/bin/surfaceflinger
+I/DEBUG   ( 1914): 
+I/DEBUG   ( 1914): stack:
+I/DEBUG   ( 1914):          be8814d8  00000000  
+I/DEBUG   ( 1914):          be8814dc  00000000  
+I/DEBUG   ( 1914):          be8814e0  00000000  
+I/DEBUG   ( 1914):          be8814e4  00000000  
+I/DEBUG   ( 1914):          be8814e8  00000000  
+I/DEBUG   ( 1914):          be8814ec  000003ff  
+I/DEBUG   ( 1914):          be8814f0  40282660  /system/lib/libsurfaceflinger.so
+I/DEBUG   ( 1914):          be8814f4  be8819e8  [stack]
+I/DEBUG   ( 1914):          be8814f8  400e3648  [heap]
+I/DEBUG   ( 1914):          be8814fc  00000001  
+I/DEBUG   ( 1914):          be881500  400df530  [heap]
+I/DEBUG   ( 1914):          be881504  00000001  
+I/DEBUG   ( 1914):          be881508  4018d525  /system/lib/libcutils.so
+I/DEBUG   ( 1914):          be88150c  40282660  /system/lib/libsurfaceflinger.so
+I/DEBUG   ( 1914):          be881510  be881584  [stack]
+I/DEBUG   ( 1914):          be881514  00000000  
+I/DEBUG   ( 1914):     #00  be881518  4012bf2c  /system/bin/linker
+I/DEBUG   ( 1914):          be88151c  00000006  
+I/DEBUG   ( 1914):          be881520  00000002  
+I/DEBUG   ( 1914):          be881524  00000938  
+I/DEBUG   ( 1914):          be881528  00000938  
+I/DEBUG   ( 1914):          be88152c  401a60b7  /system/lib/libc.so (pthread_kill+54)
+I/DEBUG   ( 1914):     #01  be881530  4012bf24  /system/bin/linker
+I/DEBUG   ( 1914):          be881534  00000006  
+I/DEBUG   ( 1914):          be881538  00000000  
+I/DEBUG   ( 1914):          be88153c  be8819e8  [stack]
+I/DEBUG   ( 1914):          be881540  400e3648  [heap]
+I/DEBUG   ( 1914):          be881544  401a62af  /system/lib/libc.so (raise+14)
+I/DEBUG   ( 1914):     #02  be881548  be881554  [stack]
+I/DEBUG   ( 1914):          be88154c  401a500f  /system/lib/libc.so
+I/DEBUG   ( 1914): 
+I/DEBUG   ( 1914): memory near r4:
+I/DEBUG   ( 1914):     4012bf0c 00000000 00000000 00000000 00000000  
+I/DEBUG   ( 1914):     4012bf1c be881a7c 00000000 4012bf24 4012c154  
+I/DEBUG   ( 1914):     4012bf2c 00000002 40242848 00000000 00000000  
+I/DEBUG   ( 1914):     4012bf3c 4012c194 00000000 00000000 00000000  
+I/DEBUG   ( 1914):     4012bf4c 00000000 00000000 00000000 400e22c8  
+I/DEBUG   ( 1914):     4012bf5c 00000000 00000000 00000000 00000000  
+I/DEBUG   ( 1914):     4012bf6c 00000000 00000000 00000000 00000000  
+I/DEBUG   ( 1914):     4012bf7c 00000000 00000000 00000000 00000000  
+I/DEBUG   ( 1914):     4012bf8c 00000000 00000000 00000000 00000000  
+I/DEBUG   ( 1914):     4012bf9c 00000000 00000000 00000000 00000000  
+I/DEBUG   ( 1914):     4012bfac 00000000 00000000 00000000 00000000  
+I/DEBUG   ( 1914):     4012bfbc 00000000 00000000 00000000 00000000  
+I/DEBUG   ( 1914):     4012bfcc 00000000 00000000 00000000 00000000  
+I/DEBUG   ( 1914):     4012bfdc 00000000 00000000 00000000 00000000  
+I/DEBUG   ( 1914):     4012bfec 00000000 00000000 00000000 00000000  
+I/DEBUG   ( 1914):     4012bffc 00000000 00000000 00000000 00000000  
+I/DEBUG   ( 1914): 
+I/DEBUG   ( 1914): memory near r9:
+I/DEBUG   ( 1914):     400df510 99691cc3 00000009 00000000 00000000  
+I/DEBUG   ( 1914):     400df520 00000000 00000000 00000000 00000000  
+I/DEBUG   ( 1914):     400df530 00000000 00000001 00000000 00000000  
+I/DEBUG   ( 1914):     400df540 00000000 402893f0 00000000 00000000  
+I/DEBUG   ( 1914):     400df550 00000000 00000004 402881a8 00000000  
+I/DEBUG   ( 1914):     400df560 00000000 00000000 00000040 ffffffff  
+I/DEBUG   ( 1914):     400df570 00000000 be881a7c 00000001 400e0850  
+I/DEBUG   ( 1914):     400df580 401e1384 00000000 00000000 00000000  
+I/DEBUG   ( 1914):     400df590 400df450 40288fe4 00000087 400db030  
+I/DEBUG   ( 1914):     400df5a0 000000c3 00000000 40288218 00000000  
+I/DEBUG   ( 1914):     400df5b0 00000000 00000000 0000000c 00000000  
+I/DEBUG   ( 1914):     400df5c0 00000000 00000000 00000000 00000000  
+I/DEBUG   ( 1914):     400df5d0 00000000 00000000 00000000 00000000  
+I/DEBUG   ( 1914):     400df5e0 00000000 00000000 00000000 00000000  
+I/DEBUG   ( 1914):     400df5f0 00000000 00000000 00000000 00000000  
+I/DEBUG   ( 1914):     400df600 00000000 400df450 400e1398 00000000  
+I/DEBUG   ( 1914): 
+I/DEBUG   ( 1914): memory near fp:
+I/DEBUG   ( 1914):     be881a4c 00000000 00000000 4003f7e0 40040e6c  
+I/DEBUG   ( 1914):     be881a5c 40040e74 40040e7c be881a70 00000000  
+I/DEBUG   ( 1914):     be881a6c 4011b87d 00000001 be881b6f 00000000  
+I/DEBUG   ( 1914):     be881a7c be881b8a be881bc7 be881bef be881c02  
+I/DEBUG   ( 1914):     be881a8c be881c17 be881c32 be881c45 be881c5e  
+I/DEBUG   ( 1914):     be881a9c be881c78 be881c91 be881eda be881f04  
+I/DEBUG   ( 1914):     be881aac be881f39 be881f65 be881f8f be881fa4  
+I/DEBUG   ( 1914):     be881abc be881fc2 00000000 00000010 0008b0d7  
+I/DEBUG   ( 1914):     be881acc 00000006 00001000 00000011 00000064  
+I/DEBUG   ( 1914):     be881adc 00000003 4003f034 00000004 00000020  
+I/DEBUG   ( 1914):     be881aec 00000005 00000008 00000007 4011a000  
+I/DEBUG   ( 1914):     be881afc 00000008 00000000 00000009 4003f77c  
+I/DEBUG   ( 1914):     be881b0c 0000000b 000003e8 0000000c 000003e8  
+I/DEBUG   ( 1914):     be881b1c 0000000d 000003eb 0000000e 000003eb  
+I/DEBUG   ( 1914):     be881b2c 00000017 00000000 00000019 be881b5b  
+I/DEBUG   ( 1914):     be881b3c 0000001f be881fe1 0000000f be881b6b  
+I/DEBUG   ( 1914): 
+I/DEBUG   ( 1914): memory near sp:
+I/DEBUG   ( 1914):     be8814f8 400e3648 00000001 400df530 00000001  
+I/DEBUG   ( 1914):     be881508 4018d525 40282660 be881584 00000000  
+I/DEBUG   ( 1914):     be881518 4012bf2c 00000006 00000002 00000938  
+I/DEBUG   ( 1914):     be881528 00000938 401a60b7 4012bf24 00000006  
+I/DEBUG   ( 1914):     be881538 00000000 be8819e8 400e3648 401a62af  
+I/DEBUG   ( 1914):     be881548 be881554 401a500f 4047d53d ffffffdf  
+I/DEBUG   ( 1914):     be881558 40126757 1375f833 40126641 1375f833  
+I/DEBUG   ( 1914):     be881568 40282660 40282660 40282660 401b4914  
+I/DEBUG   ( 1914):     be881578 4018d525 4018dab3 be881994 73206f6e  
+I/DEBUG   ( 1914):     be881588 61746975 20656c62 434c4745 69666e6f  
+I/DEBUG   ( 1914):     be881598 6f662067 2c646e75 76696720 20676e69  
+I/DEBUG   ( 1914):     be8815a8 75007075 00797265 2e696c61 70006f73  
+I/DEBUG   ( 1914):     be8815b8 73636968 572f4820 40126641 401266e6  
+I/DEBUG   ( 1914):     be8815c8 be881684 40086924 00003816 00000016  
+I/DEBUG   ( 1914):     be8815d8 40244000 00005ffc 40244859 40249ff8  
+I/DEBUG   ( 1914):     be8815e8 40244b5c 4011b4d3 00000020 be881680  
+I/DEBUG   ( 1914): 
+I/DEBUG   ( 1914): code around pc:
+I/DEBUG   ( 1914):     401b503c e8bd00f0 e3700a01 912fff1e e2600000  
+I/DEBUG   ( 1914):     401b504c ea006e76 e92d50f0 e3a07f43 ef000000  
+I/DEBUG   ( 1914):     401b505c e8bd50f0 e3700a01 912fff1e e2600000  
+I/DEBUG   ( 1914):     401b506c ea006e6e e92d50f0 e3a070ee ef000000  
+I/DEBUG   ( 1914):     401b507c e8bd50f0 e3700a01 912fff1e e2600000  
+I/DEBUG   ( 1914):     401b508c ea006e66 f200429a bf0080cf f000f891  
+I/DEBUG   ( 1914):     401b509c 4001e92d f040f891 d3532a10 0301ea80  
+I/DEBUG   ( 1914):     401b50ac 0303f013 806ef000 d3262ae0 0300f1c0  
+I/DEBUG   ( 1914):     401b50bc 030ff013 eba2d021 ea5f0203 bf447cc3  
+I/DEBUG   ( 1914):     401b50cc eb01f811 eb01f800 f811bf21 f811cb01  
+I/DEBUG   ( 1914):     401b50dc f800eb01 f800cb01 ea5feb01 da037c43  
+I/DEBUG   ( 1914):     401b50ec 080df9a1 083df980 f921d303 f900070d  
+I/DEBUG   ( 1914):     401b50fc f891071d f891f000 3a40f040 f891d30f  
+I/DEBUG   ( 1914):     401b510c f891f080 f921f0c0 f921020d f891420d  
+I/DEBUG   ( 1914):     401b511c 3a40f0c0 020df900 420df900 f102d2f3  
+I/DEBUG   ( 1914):     401b512c 3a200240 f921d305 3a20020d 020df900  
+I/DEBUG   ( 1914): 
+I/DEBUG   ( 1914): code around lr:
+I/DEBUG   ( 1914):     401a6094 4b11ec12 e010447b d10e42bb 6a1f480f  
+I/DEBUG   ( 1914):     401a60a4 f7fb4478 f00dec8a 4639ea0c f00e462a  
+I/DEBUG   ( 1914):     401a60b4 3001efce 2500d00a 681be009 d1eb2b00  
+I/DEBUG   ( 1914):     401a60c4 25034807 f7fb4478 e000ec78 60266825  
+I/DEBUG   ( 1914):     401a60d4 bdf84628 0003b30c 0003b300 0003b2f8  
+I/DEBUG   ( 1914):     401a60e4 0003b2d4 bf82f7ff 4a3a4b39 47f0e92d  
+I/DEBUG   ( 1914):     401a60f4 447b460d 4607b08a 6833589e 930946b1  
+I/DEBUG   ( 1914):     401a6104 f9fcf001 f8d04604 2d008000 4628d04a  
+I/DEBUG   ( 1914):     401a6114 fe92f00f 4606280f f7ffd846 4287ffe3  
+I/DEBUG   ( 1914):     401a6124 200fd106 f00d4629 2800e8da e032d03d  
+I/DEBUG   ( 1914):     401a6134 44784829 ebbef7fb 44784828 42b8e015  
+I/DEBUG   ( 1914):     401a6144 6a07d113 44784826 ec36f7fb 463b4a25  
+I/DEBUG   ( 1914):     401a6154 a8012120 f013447a 2101fa8b f01aa801  
+I/DEBUG   ( 1914):     401a6164 1c43fda3 d1044607 6800e015 d1e62800  
+I/DEBUG   ( 1914):     401a6174 4638e023 46324629 e914f00d 3ffff1b0  
+I/DEBUG   ( 1914):     401a6184 d1024682 29046821 4638d0f3 e964f00d  
+I/Netd    ( 2391): Netd 1.0 starting
+I/SurfaceFlinger( 2393): SurfaceFlinger is starting
+I/SurfaceFlinger( 2393): SurfaceFlinger's main thread ready to run. Initializing graphics H/W...
+D/libEGL  ( 2393): loaded /system/lib/egl/libEGL_mali.so
+D/libEGL  ( 2393): loaded /system/lib/egl/libGLESv1_CM_mali.so
+D/libEGL  ( 2393): loaded /system/lib/egl/libGLESv2_mali.so
+E/        ( 2393): ERROR in Mali driver:
+E/        ( 2393):  * Device driver API mismatch
+E/        ( 2393):  * Device driver API version: 29
+E/        ( 2393):  * User space API version: 23
+E/        ( 2393): mali: REVISION=Linux-r3p2-01rel3 BUILD_DATE=Fri Mar 21 13:52:50 KST 2014 
+W/libEGL  ( 2393): eglInitialize(0x1) failed (EGL_BAD_ALLOC)
+I/gralloc ( 2393): using (fd=16)
+I/gralloc ( 2393): id           = s3cfb
+I/gralloc ( 2393): xres         = 720 px
+I/gralloc ( 2393): yres         = 1280 px
+I/gralloc ( 2393): xres_virtual = 720 px
+I/gralloc ( 2393): yres_virtual = 2560 px
+I/gralloc ( 2393): bpp          = 32
+I/gralloc ( 2393): r            = 16:8
+I/gralloc ( 2393): g            =  8:8
+I/gralloc ( 2393): b            =  0:8
+I/gralloc ( 2393): width        = 60 mm (304.799988 dpi)
+I/gralloc ( 2393): height       = 106 mm (306.716980 dpi)
+I/gralloc ( 2393): refresh rate = 60.51 Hz
+I/SurfaceFlinger( 2393): Using composer version 1.0
+W/SurfaceFlinger( 2393): getting VSYNC period from fb HAL: 16527286
+W/SurfaceFlinger( 2393): no suitable EGLConfig found, trying a simpler query
+F/SurfaceFlinger( 2393): no suitable EGLConfig found, giving up
+F/libc    ( 2393): Fatal signal 6 (SIGABRT) at 0x00000959 (code=-6), thread 2393 (surfaceflinger)
+W/SurfaceFlinger( 2393): Ignoring duplicate VSYNC event from HWC (t=0)
+I/DEBUG   ( 1914): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+I/DEBUG   ( 1914): Build fingerprint: 'samsung/i9308xx/i9308:4.3/JSS15J/i9308XXUGMJ9:user/release-keys'
+I/DEBUG   ( 1914): Revision: '12'
+I/DEBUG   ( 1914): pid: 2393, tid: 2393, name: surfaceflinger  >>> /system/bin/surfaceflinger <<<
+I/DEBUG   ( 1914): signal 6 (SIGABRT), code -6 (SI_TKILL), fault addr --------
+I/DEBUG   ( 1914):     r0 00000000  r1 00000959  r2 00000006  r3 00000000
+I/DEBUG   ( 1914):     r4 4011bf2c  r5 00000006  r6 00000002  r7 0000010c
+I/DEBUG   ( 1914):     r8 00000001  r9 4147e530  sl 00000001  fp bee09a6c
+I/DEBUG   ( 1914):     ip 00000959  sp bee09518  lr 401690b7  pc 4017805c  cpsr 000f0010
+I/DEBUG   ( 1914):     d0  6174697520676e69  d1  434c474520656c62
+I/DEBUG   ( 1914):     d2  6f66206769666e6f  d3  766967202c646e75
+I/DEBUG   ( 1914):     d4  3fe000000000953a  d5  4024000000000000
+I/DEBUG   ( 1914):     d6  0000000000000000  d7  4398666640000000
+I/DEBUG   ( 1914):     d8  0000000000000000  d9  0000000000000000
+I/DEBUG   ( 1914):     d10 0000000000000000  d11 0000000000000000
+I/DEBUG   ( 1914):     d12 0000000000000000  d13 0000000000000000
+I/DEBUG   ( 1914):     d14 0000000000000000  d15 0000000000000000
+I/DEBUG   ( 1914):     d16 404e40c4a0000000  d17 41cdcd6500000000
+I/DEBUG   ( 1914):     d18 416f85f6cd117aa9  d19 0000000000000000
+I/DEBUG   ( 1914):     d20 401833d080000000  d21 404e40c4a0000000
+I/DEBUG   ( 1914):     d22 0000000000000000  d23 0000000000000000
+I/DEBUG   ( 1914):     d24 0000000000000000  d25 0000000000000000
+I/DEBUG   ( 1914):     d26 404e40c4a0000000  d27 0000000000000000
+I/DEBUG   ( 1914):     d28 0000000000000000  d29 0000000000000000
+I/DEBUG   ( 1914):     d30 0000000000000000  d31 4000000000000000
+I/DEBUG   ( 1914):     scr 20000010
+I/DEBUG   ( 1914): 
+I/DEBUG   ( 1914): backtrace:
+I/DEBUG   ( 1914):     #00  pc 0002205c  /system/lib/libc.so (tgkill+12)
+I/DEBUG   ( 1914):     #01  pc 000130b3  /system/lib/libc.so (pthread_kill+50)
+I/DEBUG   ( 1914):     #02  pc 000132ab  /system/lib/libc.so (raise+10)
+I/DEBUG   ( 1914):     #03  pc 0001200b  /system/lib/libc.so
+I/DEBUG   ( 1914):     #04  pc 00021910  /system/lib/libc.so (abort+4)
+I/DEBUG   ( 1914):     #05  pc 00006aaf  /system/lib/libcutils.so (__android_log_assert+86)
+I/DEBUG   ( 1914):     #06  pc 0001d11f  /system/lib/libsurfaceflinger.so (android::SurfaceFlinger::init()+1294)
+I/DEBUG   ( 1914):     #07  pc 000008a7  /system/bin/surfaceflinger
+I/DEBUG   ( 1914):     #08  pc 0000e42b  /system/lib/libc.so (__libc_init+50)
+I/DEBUG   ( 1914):     #09  pc 000007dc  /system/bin/surfaceflinger
+I/DEBUG   ( 1914): 
+I/DEBUG   ( 1914): stack:
+I/DEBUG   ( 1914):          bee094d8  00000000  
+I/DEBUG   ( 1914):          bee094dc  00000000  
+I/DEBUG   ( 1914):          bee094e0  00000000  
+I/DEBUG   ( 1914):          bee094e4  00000000  
+I/DEBUG   ( 1914):          bee094e8  00000000  
+I/DEBUG   ( 1914):          bee094ec  000003ff  
+I/DEBUG   ( 1914):          bee094f0  40218660  /system/lib/libsurfaceflinger.so
+I/DEBUG   ( 1914):          bee094f4  bee099e8  [stack]
+I/DEBUG   ( 1914):          bee094f8  414825d8  [heap]
+I/DEBUG   ( 1914):          bee094fc  00000001  
+I/DEBUG   ( 1914):          bee09500  4147e530  [heap]
+I/DEBUG   ( 1914):          bee09504  00000001  
+I/DEBUG   ( 1914):          bee09508  40150525  /system/lib/libcutils.so
+I/DEBUG   ( 1914):          bee0950c  40218660  /system/lib/libsurfaceflinger.so
+I/DEBUG   ( 1914):          bee09510  bee09584  [stack]
+I/DEBUG   ( 1914):          bee09514  00000000  
+I/DEBUG   ( 1914):     #00  bee09518  4011bf2c  /system/bin/linker
+I/DEBUG   ( 1914):          bee0951c  00000006  
+I/DEBUG   ( 1914):          bee09520  00000002  
+I/DEBUG   ( 1914):          bee09524  00000959  
+I/DEBUG   ( 1914):          bee09528  00000959  
+I/DEBUG   ( 1914):          bee0952c  401690b7  /system/lib/libc.so (pthread_kill+54)
+I/DEBUG   ( 1914):     #01  bee09530  4011bf24  /system/bin/linker
+I/DEBUG   ( 1914):          bee09534  00000006  
+I/DEBUG   ( 1914):          bee09538  00000000  
+I/DEBUG   ( 1914):          bee0953c  bee099e8  [stack]
+I/DEBUG   ( 1914):          bee09540  414825d8  [heap]
+I/DEBUG   ( 1914):          bee09544  401692af  /system/lib/libc.so (raise+14)
+I/DEBUG   ( 1914):     #02  bee09548  bee09554  [stack]
+I/DEBUG   ( 1914):          bee0954c  4016800f  /system/lib/libc.so
+I/DEBUG   ( 1914): 
+I/DEBUG   ( 1914): memory near r4:
+I/DEBUG   ( 1914):     4011bf0c 00000000 00000000 00000000 00000000  
+I/DEBUG   ( 1914):     4011bf1c bee09a7c 00000000 4011bf24 4011c154  
+I/DEBUG   ( 1914):     4011bf2c 00000002 40277848 00000000 00000000  
+I/DEBUG   ( 1914):     4011bf3c 4011c194 00000000 00000000 00000000  
+I/DEBUG   ( 1914):     4011bf4c 00000000 00000000 00000000 414812d8  
+I/DEBUG   ( 1914):     4011bf5c 00000000 00000000 00000000 00000000  
+I/DEBUG   ( 1914):     4011bf6c 00000000 00000000 00000000 00000000  
+I/DEBUG   ( 1914):     4011bf7c 00000000 00000000 00000000 00000000  
+I/DEBUG   ( 1914):     4011bf8c 00000000 00000000 00000000 00000000  
+I/DEBUG   ( 1914):     4011bf9c 00000000 00000000 00000000 00000000  
+I/DEBUG   ( 1914):     4011bfac 00000000 00000000 00000000 00000000  
+I/DEBUG   ( 1914):     4011bfbc 00000000 00000000 00000000 00000000  
+I/DEBUG   ( 1914):     4011bfcc 00000000 00000000 00000000 00000000  
+I/DEBUG   ( 1914):     4011bfdc 00000000 00000000 00000000 00000000  
+I/DEBUG   ( 1914):     4011bfec 00000000 00000000 00000000 00000000  
+I/DEBUG   ( 1914):     4011bffc 00000000 00000000 00000000 00000000  
+I/DEBUG   ( 1914): 
+I/DEBUG   ( 1914): memory near r9:
+I/DEBUG   ( 1914):     4147e510 eab2788e 0000000a 00000000 00000000  
+I/DEBUG   ( 1914):     4147e520 00000000 00000000 00000000 00000000  
+I/DEBUG   ( 1914):     4147e530 00000000 00000001 00000000 00000000  
+I/DEBUG   ( 1914):     4147e540 00000000 4021f3f0 00000000 00000000  
+I/DEBUG   ( 1914):     4147e550 00000000 00000004 4021e1a8 00000000  
+I/DEBUG   ( 1914):     4147e560 00000000 00000000 00000040 ffffffff  
+I/DEBUG   ( 1914):     4147e570 00000000 bee09a7c 00000001 4147f850  
+I/DEBUG   ( 1914):     4147e580 401a4384 00000000 00000000 00000000  
+I/DEBUG   ( 1914):     4147e590 4147e450 4021efe4 00000087 4147a030  
+I/DEBUG   ( 1914):     4147e5a0 0000008e 00000000 4021e218 00000000  
+I/DEBUG   ( 1914):     4147e5b0 00000000 00000000 0000000c 00000000  
+I/DEBUG   ( 1914):     4147e5c0 00000000 00000000 00000000 00000000  
+I/DEBUG   ( 1914):     4147e5d0 00000000 00000000 00000000 00000000  
+I/DEBUG   ( 1914):     4147e5e0 00000000 00000000 00000000 00000000  
+I/DEBUG   ( 1914):     4147e5f0 00000000 00000000 00000000 00000000  
+I/DEBUG   ( 1914):     4147e600 00000000 4147e450 4147fb68 00000000  
+I/DEBUG   ( 1914): 
+I/DEBUG   ( 1914): memory near fp:
+I/DEBUG   ( 1914):     bee09a4c 00000000 00000000 400be7e0 400bfe6c  
+I/DEBUG   ( 1914):     bee09a5c 400bfe74 400bfe7c bee09a70 00000000  
+I/DEBUG   ( 1914):     bee09a6c 4010b87d 00000001 bee09b6f 00000000  
+I/DEBUG   ( 1914):     bee09a7c bee09b8a bee09bc7 bee09bef bee09c02  
+I/DEBUG   ( 1914):     bee09a8c bee09c17 bee09c32 bee09c45 bee09c5e  
+I/DEBUG   ( 1914):     bee09a9c bee09c78 bee09c91 bee09eda bee09f04  
+I/DEBUG   ( 1914):     bee09aac bee09f39 bee09f65 bee09f8f bee09fa4  
+I/DEBUG   ( 1914):     bee09abc bee09fc2 00000000 00000010 0008b0d7  
+I/DEBUG   ( 1914):     bee09acc 00000006 00001000 00000011 00000064  
+I/DEBUG   ( 1914):     bee09adc 00000003 400be034 00000004 00000020  
+I/DEBUG   ( 1914):     bee09aec 00000005 00000008 00000007 4010a000  
+I/DEBUG   ( 1914):     bee09afc 00000008 00000000 00000009 400be77c  
+I/DEBUG   ( 1914):     bee09b0c 0000000b 000003e8 0000000c 000003e8  
+I/DEBUG   ( 1914):     bee09b1c 0000000d 000003eb 0000000e 000003eb  
+I/DEBUG   ( 1914):     bee09b2c 00000017 00000000 00000019 bee09b5b  
+I/DEBUG   ( 1914):     bee09b3c 0000001f bee09fe1 0000000f bee09b6b  
+I/DEBUG   ( 1914): 
+I/DEBUG   ( 1914): memory near sp:
+I/DEBUG   ( 1914):     bee094f8 414825d8 00000001 4147e530 00000001  
+I/DEBUG   ( 1914):     bee09508 40150525 40218660 bee09584 00000000  
+I/DEBUG   ( 1914):     bee09518 4011bf2c 00000006 00000002 00000959  
+I/DEBUG   ( 1914):     bee09528 00000959 401690b7 4011bf24 00000006  
+I/DEBUG   ( 1914):     bee09538 00000000 bee099e8 414825d8 401692af  
+I/DEBUG   ( 1914):     bee09548 bee09554 4016800f 404e753d ffffffdf  
+I/DEBUG   ( 1914):     bee09558 40116757 0f091b39 40116641 0f091b39  
+I/DEBUG   ( 1914):     bee09568 40218660 40218660 40218660 40177914  
+I/DEBUG   ( 1914):     bee09578 40150525 40150ab3 bee09994 73206f6e  
+I/DEBUG   ( 1914):     bee09588 61746975 20656c62 434c4745 69666e6f  
+I/DEBUG   ( 1914):     bee09598 6f662067 2c646e75 76696720 20676e69  
+I/DEBUG   ( 1914):     bee095a8 75007075 00797265 2e696c61 70006f73  
+I/DEBUG   ( 1914):     bee095b8 73636968 572f4820 40116641 401166e6  
+I/DEBUG   ( 1914):     bee095c8 bee09684 400c3924 00003816 00000016  
+I/DEBUG   ( 1914):     bee095d8 40098000 00005ffc 40098859 4009dff8  
+I/DEBUG   ( 1914):     bee095e8 40098b5c 4010b4d3 00000020 bee09680  
+I/DEBUG   ( 1914): 
+I/DEBUG   ( 1914): code around pc:
+I/DEBUG   ( 1914):     4017803c e8bd00f0 e3700a01 912fff1e e2600000  
+I/DEBUG   ( 1914):     4017804c ea006e76 e92d50f0 e3a07f43 ef000000  
+I/DEBUG   ( 1914):     4017805c e8bd50f0 e3700a01 912fff1e e2600000  
+I/DEBUG   ( 1914):     4017806c ea006e6e e92d50f0 e3a070ee ef000000  
+I/DEBUG   ( 1914):     4017807c e8bd50f0 e3700a01 912fff1e e2600000  
+I/DEBUG   ( 1914):     4017808c ea006e66 f200429a bf0080cf f000f891  
+I/DEBUG   ( 1914):     4017809c 4001e92d f040f891 d3532a10 0301ea80  
+I/DEBUG   ( 1914):     401780ac 0303f013 806ef000 d3262ae0 0300f1c0  
+I/DEBUG   ( 1914):     401780bc 030ff013 eba2d021 ea5f0203 bf447cc3  
+I/DEBUG   ( 1914):     401780cc eb01f811 eb01f800 f811bf21 f811cb01  
+I/DEBUG   ( 1914):     401780dc f800eb01 f800cb01 ea5feb01 da037c43  
+I/DEBUG   ( 1914):     401780ec 080df9a1 083df980 f921d303 f900070d  
+I/DEBUG   ( 1914):     401780fc f891071d f891f000 3a40f040 f891d30f  
+I/DEBUG   ( 1914):     4017810c f891f080 f921f0c0 f921020d f891420d  
+I/DEBUG   ( 1914):     4017811c 3a40f0c0 020df900 420df900 f102d2f3  
+I/DEBUG   ( 1914):     4017812c 3a200240 f921d305 3a20020d 020df900  
+I/DEBUG   ( 1914): 
+I/DEBUG   ( 1914): code around lr:
+I/DEBUG   ( 1914):     40169094 4b11ec12 e010447b d10e42bb 6a1f480f  
+I/DEBUG   ( 1914):     401690a4 f7fb4478 f00dec8a 4639ea0c f00e462a  
+I/DEBUG   ( 1914):     401690b4 3001efce 2500d00a 681be009 d1eb2b00  
+I/DEBUG   ( 1914):     401690c4 25034807 f7fb4478 e000ec78 60266825  
+I/DEBUG   ( 1914):     401690d4 bdf84628 0003b30c 0003b300 0003b2f8  
+I/DEBUG   ( 1914):     401690e4 0003b2d4 bf82f7ff 4a3a4b39 47f0e92d  
+I/DEBUG   ( 1914):     401690f4 447b460d 4607b08a 6833589e 930946b1  
+I/DEBUG   ( 1914):     40169104 f9fcf001 f8d04604 2d008000 4628d04a  
+I/DEBUG   ( 1914):     40169114 fe92f00f 4606280f f7ffd846 4287ffe3  
+I/DEBUG   ( 1914):     40169124 200fd106 f00d4629 2800e8da e032d03d  
+I/DEBUG   ( 1914):     40169134 44784829 ebbef7fb 44784828 42b8e015  
+I/DEBUG   ( 1914):     40169144 6a07d113 44784826 ec36f7fb 463b4a25  
+I/DEBUG   ( 1914):     40169154 a8012120 f013447a 2101fa8b f01aa801  
+I/DEBUG   ( 1914):     40169164 1c43fda3 d1044607 6800e015 d1e62800  
+I/DEBUG   ( 1914):     40169174 4638e023 46324629 e914f00d 3ffff1b0  
+I/DEBUG   ( 1914):     40169184 d1024682 29046821 4638d0f3 e964f00d  
